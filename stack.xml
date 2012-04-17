@@ -1,0 +1,11 @@
+<stack>
+  <description brief="moveit_msgs">Messages for planning and kinematics used in MoveIt!</description>
+  <author>Ioan Sucan</author>
+  <license>BSD</license>  
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/moveit</url>
+
+  <depend stack="common_msgs" /> <!-- geometry_msgs, actionlib_msgs, trajectory_msgs, sensor_msgs, visualization_msgs -->
+  <depend stack="shape_msgs" /> <!-- std_msgs -->
+
+</stack>
