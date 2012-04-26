@@ -7,5 +7,6 @@
 
   <depend stack="common_msgs" /> <!-- geometry_msgs, actionlib_msgs, trajectory_msgs, sensor_msgs, visualization_msgs -->
   <depend stack="shape_msgs" /> <!-- std_msgs -->
+  <depend stack="octomap_msgs"/>
 
 </stack>

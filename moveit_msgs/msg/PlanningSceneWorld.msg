@@ -1,12 +1,11 @@
-#collision objects
+# collision objects
 CollisionObject[] collision_objects
 
-#the collision map
-CollisionMap collision_map
-
-# Optional colors for objects; the last element in the array 
-# is the color of the collision_map (the colors
-# array has length 1 more than the collision_objects array).
-# To specify the color only for the collision_map, include one
-# single element in the colors array)
+# Optional colors for objects;
 std_msgs/ColorRGBA[] colors
+
+# The octomap that represents additional collision data
+octomap_msgs/OctomapBinary octomap
+
+# The collision map; this represents a simple array of boxes that shold be considered for collision
+CollisionMap collision_map
