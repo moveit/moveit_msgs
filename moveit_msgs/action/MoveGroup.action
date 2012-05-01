@@ -1,6 +1,9 @@
 # Motion planning request to pass to planner
 MotionPlanRequest request
 
+# The diff to consider for the planning scene (optional)
+PlanningScene planning_scene_diff
+
 ---
 # An error code reflecting what went wrong
 MoveItErrorCodes error_code
