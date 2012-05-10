@@ -4,9 +4,19 @@ MotionPlanRequest request
 # The diff to consider for the planning scene (optional)
 PlanningScene planning_scene_diff
 
+# Plan only (optional)
+# Returns an executable plan in the response but does not attempt execution  
+bool plan_only
+
 ---
 # An error code reflecting what went wrong
 MoveItErrorCodes error_code
+
+# The trajectory that moved group produced for execution
+moveit_msgs/RobotTrajectory planned_trajectory
+
+# The trace of the trajectory recorded during execution
+moveit_msgs/RobotTrajectory executed_trajectory
 
 ContactInformation[] contacts
 ---
