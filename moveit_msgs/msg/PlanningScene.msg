@@ -1,10 +1,13 @@
 # name of planning scene
 string name
 
-#full robot state
+# full robot state
 RobotState robot_state
 
-#additional frames for duplicating tf
+# planning frame
+string planning_frame
+
+#additional frames for duplicating tf (with respect to the planning frame)
 geometry_msgs/TransformStamped[] fixed_frame_transforms
 
 #full allowed collision matrix
