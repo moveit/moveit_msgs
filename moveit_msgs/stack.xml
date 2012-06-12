@@ -1,0 +1,26 @@
+<stack>
+  <name>moveit_msgs</name>
+  <version>0.1.0</version>
+  <description brief="MoveIt! Messages">Messages, services and actions used by MoveIt!</description>
+  <author email="isucan@willowgarage.edu">Ioan Sucan</author>
+  <author email="gjones@willowgarage.edu">Gil Jones</author>
+  <author email="sachinc@willowgarage.edu">Sachin Chitta</author>
+
+  <maintainer email="isucan@willowgarage.com">Ioan Sucan</maintainer>
+
+  <license>BSD</license>  
+  <copyright>Willow Garage</copyright>
+  <url>http://moveit.ros.org</url>
+
+  <review status="unreviewed" notes=""/>
+
+  <build_depends>catkin</build_depends>
+  <build_depends>genmsg</build_depends>
+  <build_depends>langs</build_depends>
+  <build_depends>common_msgs</build_depends>
+  <build_depends>octomap_msgs</build_depends>
+
+  <depends>common_msgs</depends>
+  <depends>octomap_msgs</depends>
+
+</stack>
