@@ -1,9 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 project(moveit_msgs)
 
-find_package(catkin REQUIRED)
-
-catkin_stack()
 catkin_project(moveit_msgs
   INCLUDE_DIRS include)
 

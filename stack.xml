@@ -1,12 +1,26 @@
 <stack>
-  <description brief="moveit_msgs">Messages for planning and kinematics used in MoveIt!</description>
-  <author>Ioan Sucan</author>
-  <license>BSD</license>  
-  <review status="unreviewed" notes=""/>
-  <url>http://ros.org/wiki/moveit</url>
+  <name>moveit_msgs</name>
+  <version>0.1.0</version>
+  <description brief="MoveIt! Messages">Messages, services and actions used by MoveIt!</description>
+  <author email="isucan@willowgarage.edu">Ioan Sucan</author>
+  <author email="gjones@willowgarage.edu">Gil Jones</author>
+  <author email="sachinc@willowgarage.edu">Sachin Chitta</author>
 
-  <depend stack="common_msgs" /> <!-- geometry_msgs, actionlib_msgs, trajectory_msgs, sensor_msgs, visualization_msgs -->
-  <depend stack="shape_msgs" /> <!-- std_msgs -->
-  <depend stack="octomap_msgs"/>
+  <maintainer email="isucan@willowgarage.com">Ioan Sucan</maintainer>
+
+  <license>BSD</license>  
+  <copyright>Willow Garage</copyright>
+  <url>http://moveit.ros.org</url>
+
+  <review status="unreviewed" notes=""/>
+
+  <build_depends>catkin</build_depends>
+  <build_depends>genmsg</build_depends>
+  <build_depends>langs</build_depends>
+  <build_depends>common_msgs</build_depends>
+  <build_depends>octomap_msgs</build_depends>
+
+  <depends>common_msgs</depends>
+  <depends>octomap_msgs</depends>
 
 </stack>
