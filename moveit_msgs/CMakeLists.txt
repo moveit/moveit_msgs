@@ -1,4 +1,3 @@
-cmake_minimum_required(VERSION 2.8)
 project(moveit_msgs)
 
 catkin_project(moveit_msgs
@@ -14,11 +13,12 @@ file(GLOB MSG_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}/msg/ ${CMAKE_CURRENT_SO
 file(GLOB SRV_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}/srv/ ${CMAKE_CURRENT_SOURCE_DIR}/srv/*.srv)
 file(GLOB ACT_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}/action/ ${CMAKE_CURRENT_SOURCE_DIR}/action/*.action)
 
+#add_action_files(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/action FILES ${ACT_FILES})
 add_message_files(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/msg FILES ${MSG_FILES})
-add_action_files(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/action FILES ${ACT_FILES})
 add_service_files(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/srv FILES ${SRV_FILES})
 
 generate_messages(DEPENDENCIES ${MSG_DEPS})
+
 
 # install all manifests; for compatibility with old build system
 install(FILES manifest.xml

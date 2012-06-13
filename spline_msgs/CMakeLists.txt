@@ -9,7 +9,11 @@ find_package(genmsg REQUIRED)
 file(GLOB MSG_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}/msg/ ${CMAKE_CURRENT_SOURCE_DIR}/msg/*.msg)
 add_message_files(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/msg FILES ${MSG_FILES})
 
-generate_messages()
+set(MSG_DEPS std_msgs)
+
+find_package(ROS REQUIRED ${MSG_DEPS})
+
+generate_messages(DEPENDENCIES ${MSG_DEPS})
 
 # install all manifests; for compatibility with old build system
 install(FILES manifest.xml
