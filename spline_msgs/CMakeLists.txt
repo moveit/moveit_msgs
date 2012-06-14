@@ -1,4 +1,3 @@
-cmake_minimum_required(VERSION 2.8)
 project(spline_msgs)
 
 catkin_project(spline_msgs
@@ -6,7 +5,15 @@ catkin_project(spline_msgs
 
 find_package(genmsg REQUIRED)
 
-file(GLOB MSG_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}/msg/ ${CMAKE_CURRENT_SOURCE_DIR}/msg/*.msg)
+set(MSG_FILES
+LSPBSplineCoefficients.msg
+LSPBTrajectoryMsg.msg
+LSPBTrajectorySegmentMsg.msg
+SplineCoefficients.msg
+SplineTrajectory.msg
+SplineTrajectorySegment.msg
+)
+
 add_message_files(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/msg FILES ${MSG_FILES})
 
 set(MSG_DEPS std_msgs)

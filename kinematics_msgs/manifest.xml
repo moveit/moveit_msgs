@@ -11,12 +11,7 @@
   <depend package="moveit_msgs" />
 
   <export>
-    <cpp cflags="-I${prefix}/include"/>
+    <cpp cflags="`pkg-config --cflags kinematics_msgs`"/>
   </export>
 
-  <platform os="ubuntu" version="9.04"/>
-  <platform os="ubuntu" version="9.10"/>
-  <platform os="ubuntu" version="10.04"/>
 </package>
-
-

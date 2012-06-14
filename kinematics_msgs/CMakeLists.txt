@@ -1,4 +1,3 @@
-cmake_minimum_required(VERSION 2.8)
 project(kinematics_msgs)
 
 catkin_project(kinematics_msgs
@@ -6,8 +5,17 @@ catkin_project(kinematics_msgs
 
 find_package(genmsg REQUIRED)
 
-file(GLOB MSG_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}/msg/ ${CMAKE_CURRENT_SOURCE_DIR}/msg/*.msg)
-file(GLOB SRV_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}/srv/ ${CMAKE_CURRENT_SOURCE_DIR}/srv/*.srv)
+set(MSG_FILES
+KinematicSolverInfo.msg
+PositionIKRequest.msg
+)
+
+set(SRV_FILES
+GetConstraintAwarePositionIK.srv
+GetKinematicSolverInfo.srv
+GetPositionFK.srv
+GetPositionIK.srv
+)
 
 set(MSG_DEPS std_msgs sensor_msgs geometry_msgs shape_msgs)
 

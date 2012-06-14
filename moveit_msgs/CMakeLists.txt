@@ -9,9 +9,49 @@ set(MSG_DEPS std_msgs actionlib_msgs visualization_msgs sensor_msgs geometry_msg
 
 find_package(ROS REQUIRED ${MSG_DEPS})
 
-file(GLOB MSG_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}/msg/ ${CMAKE_CURRENT_SOURCE_DIR}/msg/*.msg)
-file(GLOB SRV_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}/srv/ ${CMAKE_CURRENT_SOURCE_DIR}/srv/*.srv)
-file(GLOB ACT_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}/action/ ${CMAKE_CURRENT_SOURCE_DIR}/action/*.action)
+set(MSG_FILES
+AllowedCollisionEntry.msg
+AllowedCollisionMatrix.msg
+AttachedCollisionObject.msg
+CollisionMap.msg
+CollisionObject.msg
+ConstraintEvalResult.msg
+ConstraintEvalResults.msg
+Constraints.msg
+ContactInformation.msg
+DisplayTrajectory.msg
+JointConstraint.msg
+JointLimits.msg
+LinkPadding.msg
+LinkScale.msg
+MotionPlanDetailedResponse.msg
+MotionPlanRequest.msg
+MoveItErrorCodes.msg
+MultiDOFJointState.msg
+MultiDOFJointTrajectory.msg
+MultiDOFJointTrajectoryPoint.msg
+OrientationConstraint.msg
+OrientedBoundingBox.msg
+PlannerInterfaceDescription.msg
+PlanningScene.msg
+PlanningSceneWorld.msg
+PositionConstraint.msg
+RobotState.msg
+RobotTrajectory.msg
+VisibilityConstraint.msg
+WorkspaceParameters.msg
+)
+
+set(SRV_FILES
+ComputePlanningBenchmark.srv
+ConstructConstraintApproximation.srv
+GetMotionPlan.srv
+QueryPlannerInterfaces.srv
+)
+
+set(ACT_FILES
+MoveGroup.action
+)
 
 add_action_files(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/action FILES ${ACT_FILES})
 add_message_files(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/msg FILES ${MSG_FILES})
