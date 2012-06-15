@@ -53,9 +53,9 @@ set(ACT_FILES
 MoveGroup.action
 )
 
-add_action_files(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/action FILES ${ACT_FILES})
-add_message_files(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/msg FILES ${MSG_FILES})
-add_service_files(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/srv FILES ${SRV_FILES})
+add_action_files(DIRECTORY action FILES ${ACT_FILES})
+add_message_files(DIRECTORY msg FILES ${MSG_FILES})
+add_service_files(DIRECTORY srv FILES ${SRV_FILES})
 
 generate_messages(DEPENDENCIES ${MSG_DEPS})
 

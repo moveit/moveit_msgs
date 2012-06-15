@@ -21,8 +21,8 @@ set(MSG_DEPS std_msgs sensor_msgs geometry_msgs shape_msgs)
 
 find_package(ROS REQUIRED ${MSG_DEPS})
 
-add_message_files(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/msg FILES ${MSG_FILES})
-add_service_files(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/srv FILES ${SRV_FILES})
+add_message_files(DIRECTORY msg FILES ${MSG_FILES})
+add_service_files(DIRECTORY srv FILES ${SRV_FILES})
 
 generate_messages(DEPENDENCIES ${MSG_DEPS} moveit_msgs)
 

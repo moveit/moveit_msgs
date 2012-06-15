@@ -14,7 +14,7 @@ SplineTrajectory.msg
 SplineTrajectorySegment.msg
 )
 
-add_message_files(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/msg FILES ${MSG_FILES})
+add_message_files(DIRECTORY msg FILES ${MSG_FILES})
 
 set(MSG_DEPS std_msgs)
 
