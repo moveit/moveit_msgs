@@ -28,4 +28,4 @@ generate_messages(DEPENDENCIES ${MSG_DEPS} moveit_msgs)
 
 # install all manifests; for compatibility with old build system
 install(FILES manifest.xml
-        DESTINATION share/kinematic_msgs)
+        DESTINATION share/kinematics_msgs)
