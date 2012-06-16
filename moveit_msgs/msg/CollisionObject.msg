@@ -6,9 +6,9 @@ string id
 
 # the the collision geometries associated with the object;
 # their poses are with respect to the specified header
-SolidPrimitive[] primitives
-Mesh[] meshes
-Plane[] planes
+shape_msgs/SolidPrimitive[] primitives
+shape_msgs/Mesh[] meshes
+shape_msgs/Plane[] planes
 geometry_msgs/Pose[] poses
 
 # Puts the object into the environment
