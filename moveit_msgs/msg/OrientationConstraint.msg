@@ -1,7 +1,9 @@
 # This message contains the definition of an orientation constraint.
 
+Header header
+
 # The desired orientation of the robot link specified as a quaternion
-geometry_msgs/QuaternionStamped orientation
+geometry_msgs/Quaternion orientation
 
 # The robot link this constraint refers to
 string link_name

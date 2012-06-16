@@ -13,6 +13,7 @@ set(MSG_FILES
 AllowedCollisionEntry.msg
 AllowedCollisionMatrix.msg
 AttachedCollisionObject.msg
+BoundingVolume.msg
 CollisionMap.msg
 CollisionObject.msg
 ConstraintEvalResult.msg

@@ -22,7 +22,7 @@ int32 cone_sides
 # The pose in which visibility is to be maintained.
 # The frame id should represent the robot link to which the sensor is attached.
 # It is assumed the sensor can look directly at the target, in any direction.
-# This assumption is usually not true, but such additional PositionConstraints
+# This assumption is usually not true, but additional PositionConstraints
 # can resolve this issue.
 geometry_msgs/PoseStamped sensor_pose
 
@@ -45,8 +45,11 @@ float64 max_view_angle
 float64 max_range_angle
 
 # The axis that is assumed to indicate the direction of view for the sensor
-# X = 0, Y = 1, Z = 2
-int8 sensor_view_direction
+# X = 2, Y = 1, Z = 0
+uint8 SENSOR_Z=0
+uint8 SENSOR_Y=1
+uint8 SENSOR_X=2
+uint8 sensor_view_direction
 
 # A weighting factor for this constraint (denotes relative importance to other constraints. Closer to zero means less important)
 float64 weight
