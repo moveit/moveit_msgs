@@ -10,7 +10,7 @@
   <url>http://ros.org/wiki/spline_msgs</url>
 
   <export>
-    <cpp cflags="-I${prefix}/../build/gen/cpp"/>
+    <cpp cflags="`pkg-config --cflags spline_msgs`"/>
   </export>
 
 </package>

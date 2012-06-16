@@ -23,5 +23,5 @@ find_package(ROS REQUIRED ${MSG_DEPS})
 generate_messages(DEPENDENCIES ${MSG_DEPS})
 
 # install all manifests; for compatibility with old build system
-install(FILES manifest.xml
-        DESTINATION share/spline_msgs)
+install(FILES manifest-to-install.xml
+        DESTINATION share/spline_msgs RENAME manifest.xml)

@@ -17,7 +17,7 @@
   <depend package="octomap_msgs"/>
 
   <export>
-    <cpp cflags="-I${prefix}/../build/gen/cpp"/>
+    <cpp cflags="`pkg-config --cflags moveit_msgs`"/>
   </export>
 
 </package>

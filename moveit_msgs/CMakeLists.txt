@@ -61,5 +61,5 @@ add_service_files(DIRECTORY srv FILES ${SRV_FILES})
 generate_messages(DEPENDENCIES ${MSG_DEPS})
 
 # install all manifests; for compatibility with old build system
-install(FILES manifest.xml
-        DESTINATION share/moveit_msgs)
+install(FILES manifest-to-install.xml
+        DESTINATION share/moveit_msgs RENAME manifest.xml)
