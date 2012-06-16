@@ -7,8 +7,9 @@ string link_name
 geometry_msgs/Vector3 target_point_offset
 
 # The shape of the bounded region that constrains the position of the end-effector
-# This region is always centered at the position defined above
-shape_msgs/Shape constraint_region_shape
+# This region is always centered at the position defined above (primitive or mesh)
+shape_msgs/SolidPrimitive constraint_region_primitive
+shape_msgs/Mesh constraint_region_mesh
 
 # The orientation of the bounded region that constrains the position of the end-effector
 # This allows the specification of non-axis aligned constraints

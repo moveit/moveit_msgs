@@ -4,10 +4,11 @@ Header header
 # the id of the object
 string id
 
-# the shapes associated with the object
-shape_msgs/Shape[] shapes
-
-# the poses associated with the shapes - will be transformed using the header
+# the the collision geometries associated with the object;
+# their poses are with respect to the specified header
+SolidPrimitive[] primitives
+Mesh[] meshes
+Plane[] planes
 geometry_msgs/Pose[] poses
 
 # Puts the object into the environment

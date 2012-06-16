@@ -1,10 +1,10 @@
 # This message contains the definition of an orientation constraint.
 
-# The robot link this constraint refers to
-string link_name
-
 # The desired orientation of the robot link specified as a quaternion
 geometry_msgs/QuaternionStamped orientation
+
+# The robot link this constraint refers to
+string link_name
 
 # optional axis-angle error tolerances specified
 float64 absolute_x_axis_tolerance
