@@ -15,8 +15,9 @@ geometry_msgs/Pose[] primitive_poses
 shape_msgs/Mesh[] meshes
 geometry_msgs/Pose[] mesh_poses
 
-# bounding planes (equation is specified, so no need for pose)
+# bounding planes (equation is specified, but the plane can be oriented using an additional pose)
 shape_msgs/Plane[] planes
+geometry_msgs/Pose[] plane_poses
 
 # Puts the object into the environment
 #or updates the object if already added
