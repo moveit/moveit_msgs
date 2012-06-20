@@ -7,4 +7,3 @@ catkin_stack()
 
 add_subdirectory(moveit_msgs)
 add_subdirectory(kinematics_msgs)
-add_subdirectory(spline_msgs)
