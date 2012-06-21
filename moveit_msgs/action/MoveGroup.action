@@ -12,6 +12,9 @@ bool plan_only
 # An error code reflecting what went wrong
 MoveItErrorCodes error_code
 
+# The full starting state of the robot at the start of the trajectory
+moveit_msgs/RobotState start_state
+
 # The trajectory that moved group produced for execution
 moveit_msgs/RobotTrajectory planned_trajectory
 
