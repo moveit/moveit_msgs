@@ -21,7 +21,7 @@ string filename
 
 ---
 
-# The planning instances to use in the benchmark
+# The planning instances used in the benchmark
 PlannerInterfaceDescription[] planner_interfaces
 
 # The first solution that was found, if any was found, for each planner interface
