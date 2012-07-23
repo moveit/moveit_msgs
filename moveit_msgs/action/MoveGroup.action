@@ -4,11 +4,17 @@ MotionPlanRequest request
 # The diff to consider for the planning scene (optional)
 PlanningScene planning_scene_diff
 
-# Plan only (optional)
-# Returns an executable plan in the response but does not attempt execution  
+# If this flag is set to true, the action
+# returns an executable plan in the response but does not attempt execution  
 bool plan_only
 
+# If this flag is set to true, the action of moving & executing
+# is allowed to look around (move sensors) if it seems that not
+# enough information is available about the environment
+bool look_around
+
 ---
+
 # An error code reflecting what went wrong
 MoveItErrorCodes error_code
 
@@ -21,8 +27,8 @@ moveit_msgs/RobotTrajectory planned_trajectory
 # The trace of the trajectory recorded during execution
 moveit_msgs/RobotTrajectory executed_trajectory
 
-ContactInformation[] contacts
 ---
+
 # The internal state that the move arm action currently is in
 string state
 
