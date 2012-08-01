@@ -5,7 +5,7 @@ CollisionObject[] collision_objects
 std_msgs/ColorRGBA[] colors
 
 # The octomap that represents additional collision data
-octomap_msgs/OctomapBinary octomap
+octomap_msgs/OctomapBinaryWithPose octomap
 
 # The collision map; this represents a simple array of boxes that shold be considered for collision
 CollisionMap collision_map
