@@ -22,12 +22,6 @@ LinkPadding[] link_padding
 # all link scales
 LinkScale[] link_scale
 
-# attached collision objects
-AttachedCollisionObject[] attached_collision_objects
-
-# Colors for the attached collision_objects
-std_msgs/ColorRGBA[] attached_collision_objects_colors
-
 # the collision map
 PlanningSceneWorld world
 
