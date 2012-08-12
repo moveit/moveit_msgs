@@ -19,6 +19,7 @@ CollisionObject.msg
 ConstraintEvalResult.msg
 ConstraintEvalResults.msg
 Constraints.msg
+CostSource.msg
 ContactInformation.msg
 DisplayTrajectory.msg
 JointConstraint.msg
@@ -47,6 +48,7 @@ set(SRV_FILES
 ComputePlanningBenchmark.srv
 ConstructConstraintApproximation.srv
 GetMotionPlan.srv
+GetStateValidity.srv
 QueryPlannerInterfaces.srv
 )
 
