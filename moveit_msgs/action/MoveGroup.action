@@ -8,10 +8,16 @@ PlanningScene planning_scene_diff
 # returns an executable plan in the response but does not attempt execution  
 bool plan_only
 
-# If this flag is set to true, the action of moving & executing
+# If this value is positive, the action of planning & executing
 # is allowed to look around (move sensors) if it seems that not
-# enough information is available about the environment
-bool look_around
+# enough information is available about the environment for a 
+# maximum number of attempts
+int32 look_around_attempts
+
+# If the plan becomes invalidated during execution, it is possible to have
+# that plan recomputed and execution restarted. The number of attempts at 
+# this procedure (replanning) is set by the value below.
+int32 replan_attempts
 
 ---
 
