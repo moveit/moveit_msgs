@@ -1,0 +1,10 @@
+# The trajectory to execute 
+RobotTrajectory trajectory
+
+# Set this to true if the service should block until the execution is complete
+bool wait_for_execution
+
+---
+
+# Error code - encodes the overall reason for failure
+MoveItErrorCodes error_code

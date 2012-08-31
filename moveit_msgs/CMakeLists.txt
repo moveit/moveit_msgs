@@ -48,6 +48,7 @@ set(SRV_FILES
 ComputePlanningBenchmark.srv
 ConstructConstraintApproximation.srv
 GetMotionPlan.srv
+ExecuteKnownTrajectory.srv
 GetStateValidity.srv
 QueryPlannerInterfaces.srv
 )
