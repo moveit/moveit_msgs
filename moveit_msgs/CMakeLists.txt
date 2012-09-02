@@ -1,13 +1,12 @@
 project(moveit_msgs)
 
-catkin_project(moveit_msgs
-  INCLUDE_DIRS include)
+catkin_project(moveit_msgs)
 
 find_package(genmsg REQUIRED)
 
 set(MSG_DEPS std_msgs actionlib_msgs visualization_msgs sensor_msgs geometry_msgs trajectory_msgs shape_msgs octomap_msgs)
 
-find_package(ROS REQUIRED ${MSG_DEPS})
+find_package(catkin REQUIRED ${MSG_DEPS})
 
 set(MSG_FILES
 AllowedCollisionEntry.msg
