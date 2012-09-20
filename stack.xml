@@ -1,6 +1,6 @@
 <stack>
   <name>moveit_msgs</name>
-  <version>0.3.0</version>
+  <version>0.3.1</version>
   <description brief="MoveIt! Messages">Messages, services and actions used by MoveIt!</description>
   <author email="isucan@willowgarage.edu">Ioan Sucan</author>
   <author email="gjones@willowgarage.edu">Gil Jones</author>
@@ -16,10 +16,11 @@
 
   <build_depends>catkin</build_depends>
   <build_depends>genmsg</build_depends>
-  <build_depends>langs</build_depends>
+  <build_depends>langs-dev</build_depends>
   <build_depends>common_msgs</build_depends>
   <build_depends>octomap_msgs</build_depends>
 
+  <depends>langs</depends>
   <depends>common_msgs</depends>
   <depends>octomap_msgs</depends>
 

@@ -1,9 +1,6 @@
 # collision objects
 CollisionObject[] collision_objects
 
-# Optional colors for objects;
-std_msgs/ColorRGBA[] colors
-
 # The octomap that represents additional collision data
 octomap_msgs/OctomapWithPose octomap
 

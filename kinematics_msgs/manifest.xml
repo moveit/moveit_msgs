@@ -1,19 +1,17 @@
 <package>
-  <description brief="spline_msgs">
-
-     spline_msgs
-
+  <description brief="kinematics_msgs">
+    This package provides general-purpose messages and services that can be used for kinematic computation using a ROS interface.
   </description>
-  <author>Gil Jones</author>
+  <author>Sachin Chitta</author>
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
-  <url>http://ros.org/wiki/spline_msgs</url>
+  <url>http://ros.org/wiki/kinematics_msgs</url>
 
   <depend package="geometry_msgs" />
   <depend package="moveit_msgs" />
 
   <export>
-    <cpp cflags="-I${prefix}/../build/gen/cpp"/>
+    <cpp cflags="`pkg-config --cflags kinematics_msgs`"/>
   </export>
 
 </package>

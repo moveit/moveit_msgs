@@ -24,7 +24,3 @@ add_message_files(DIRECTORY msg FILES ${MSG_FILES})
 add_service_files(DIRECTORY srv FILES ${SRV_FILES})
 
 generate_messages(DEPENDENCIES ${MSG_DEPS} moveit_msgs)
-
-# install all manifests; for compatibility with old build system
-install(FILES manifest-to-install.xml
-        DESTINATION share/kinematics_msgs RENAME manifest.xml)

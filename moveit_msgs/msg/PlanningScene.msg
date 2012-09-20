@@ -22,6 +22,10 @@ LinkPadding[] link_padding
 # all link scales
 LinkScale[] link_scale
 
+# Attached objects, collision objects, even the octomap or collision map can have 
+# colors associated to them. This array specifies them.
+ObjectColor[] object_colors
+
 # the collision map
 PlanningSceneWorld world
 
