@@ -15,7 +15,10 @@ RobotState start_state
 Constraints[] goal_constraints
 
 # No state at any point along the path in the produced motion plan will violate these constraints
-Constraints path_constraints
+Constraints waypoint_constraints
+
+# The constraints the resulting trajectory must satisfy
+TrajectoryConstraints trajectory_constraints
 
 # The name of the motion planner to use. If no name is specified,
 # a default motion planner will be used
