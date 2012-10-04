@@ -10,3 +10,6 @@ CollisionObject object
 # The set of links that the attached objects are allowed to touch
 # by default - the link_name is already considered by default
 string[] touch_links
+
+# The weight of the attached object, if known
+double weight
