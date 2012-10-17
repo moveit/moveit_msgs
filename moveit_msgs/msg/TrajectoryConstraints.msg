@@ -31,4 +31,4 @@ Constraints[] constraints
 
 # For each constraint, we specify the fraction of the time from start (between 0 and 1, sorted)
 # The same number of elements is expected for this member as for the number of constraints.
-double[] fraction_from_start
+float64[] fraction_from_start

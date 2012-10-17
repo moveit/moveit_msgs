@@ -12,4 +12,4 @@ CollisionObject object
 string[] touch_links
 
 # The weight of the attached object, if known
-double weight
+float64 weight
