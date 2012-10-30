@@ -3,6 +3,8 @@
 # This is useful only when planning for mobile parts of 
 # the robot as well.
 
+# Define the frame of reference for the box corners
+Header header
 
 # The minumum corner of the box, with respect to the robot starting pose
 geometry_msgs/Vector3 min_corner
