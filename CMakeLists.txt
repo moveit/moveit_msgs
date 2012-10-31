@@ -13,8 +13,6 @@ set(MSG_DEPS
 
 find_package(catkin REQUIRED genmsg ${MSG_DEPS})
 
-catkin_package()
-
 set(MSG_FILES
 AllowedCollisionEntry.msg
 AllowedCollisionMatrix.msg
@@ -76,3 +74,5 @@ add_message_files(DIRECTORY msg FILES ${MSG_FILES})
 add_service_files(DIRECTORY srv FILES ${SRV_FILES})
 
 generate_messages(DEPENDENCIES ${MSG_DEPS})
+
+catkin_package()
