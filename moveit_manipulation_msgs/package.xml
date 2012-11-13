@@ -1,0 +1,38 @@
+<package>
+  <name>moveit_manipulation_msgs</name>
+  <version>0.3.5</version>
+  <description>Messages used for manipulation in moveit</description>
+
+  <author email="sachinc@willowgarage.com">Sachin Chitta</author>
+  <author email="gjones@willowgarage.com">Gil Jones</author>
+  <author email="jbinney@willowgarage.com">Jon Binney</author>
+
+  <maintainer email="isucan@willowgarage.com">Ioan Sucan</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://moveit.ros.org</url>
+  <url type="bugtracker">https://github.com/ros-planning/moveit-msgs/issues</url>
+  <url type="repository">https://github.com/ros-planning/moveit-msgs</url>
+
+  <build_depend>catkin</build_depend>
+  <build_depend>genmsg</build_depend>
+  <build_depend>langs-dev</build_depend>
+  <build_depend>common_msgs</build_depend>
+  <build_depend>octomap_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>moveit_msgs</build_depend>
+  <build_depend>shape_msgs</build_depend>
+
+
+  <run_depend>langs</run_depend>
+  <run_depend>common_msgs</run_depend>
+  <run_depend>octomap_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>moveit_msgs</run_depend>
+  <run_depend>shape_msgs</run_depend>
+</package>
+
+
