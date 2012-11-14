@@ -20,6 +20,7 @@ DatabaseModelPose.msg
 DatabaseReturnCode.msg
 GraspableObject.msg
 Grasp.msg
+MultiEndEffectorGrasp.msg
 GraspResult.msg
 GripperTranslation.msg
 PickupGoal.msg
