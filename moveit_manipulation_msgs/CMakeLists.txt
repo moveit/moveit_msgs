@@ -47,4 +47,4 @@ add_service_files(DIRECTORY srv FILES ${SRV_FILES})
 
 generate_messages(DEPENDENCIES ${MSG_DEPS})
 
-catkin_package(INCLUDE_DIRS include)
+catkin_package()
