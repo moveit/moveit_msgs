@@ -53,7 +53,8 @@ PositionIKRequest.msg
 )
 
 set(SRV_FILES
-ComputePlanningBenchmark.srv
+ComputePlanningPluginsBenchmark.srv
+ComputePlanningPipelineBenchmark.srv
 ConstructConstraintApproximation.srv
 GetMotionPlan.srv
 ExecuteKnownTrajectory.srv
