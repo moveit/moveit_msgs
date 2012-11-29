@@ -4,7 +4,6 @@ project(moveit_msgs)
 set(MSG_DEPS
   std_msgs
   actionlib_msgs
-  visualization_msgs
   sensor_msgs
   geometry_msgs
   trajectory_msgs
