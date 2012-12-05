@@ -12,3 +12,6 @@ duration timeout
 # The returned solution 
 RobotState solution
 MoveItErrorCodes error_code
+
+ConstraintEvalResults constraint_eval_results
+ContactInformation[] contact_information
