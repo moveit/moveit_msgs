@@ -15,7 +15,8 @@
   <url type="bugtracker">https://github.com/ros-planning/moveit-msgs/issues</url>
   <url type="repository">https://github.com/ros-planning/moveit-msgs</url>
 
-  <build_depend>catkin</build_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+
   <build_depend>genmsg</build_depend>
   <build_depend>langs-dev</build_depend>
   <build_depend>octomap_msgs</build_depend>
