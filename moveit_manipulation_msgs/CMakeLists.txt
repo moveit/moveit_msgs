@@ -15,9 +15,6 @@ set(MSG_DEPS
 find_package(catkin REQUIRED genmsg ${MSG_DEPS})
 
 set(MSG_FILES
-DatabaseModelPoseList.msg
-DatabaseModelPose.msg
-DatabaseReturnCode.msg
 GraspableObject.msg
 Grasp.msg
 MultiEndEffectorGrasp.msg
@@ -26,24 +23,9 @@ GripperTranslation.msg
 PickupGoal.msg
 PlaceGoal.msg
 PlaceLocationResult.msg
-SceneRegion.msg
-Table.msg
-TabletopDetectionResult.msg
-)
-
-set(SRV_FILES
-AddModelExclusion.srv
-ClearExclusionsList.srv
-GetModelList.srv
-GetModelMesh.srv
-NegateExclusions.srv
-TabletopDetection.srv
-TabletopObjectRecognition.srv
-TabletopSegmentation.srv
 )
 
 add_message_files(DIRECTORY msg FILES ${MSG_FILES})
-add_service_files(DIRECTORY srv FILES ${SRV_FILES})
 
 generate_messages(DEPENDENCIES ${MSG_DEPS})
 

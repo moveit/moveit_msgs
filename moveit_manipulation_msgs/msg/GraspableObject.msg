@@ -12,13 +12,16 @@ string reference_frame_id
 
 # potential recognition results from a database of models
 # all poses are relative to the object reference pose
-moveit_manipulation_msgs/DatabaseModelPose[] potential_models
+# moveit_manipulation_msgs/DatabaseModelPose[] potential_models
+# the message above is to be taken from somewhere else
+
 
 # the point cloud itself
 sensor_msgs/PointCloud cluster
 
 # a region of a PointCloud2 of interest
-moveit_manipulation_msgs/SceneRegion region
+# moveit_manipulation_msgs/SceneRegion region
+# the message above is to be taken from somewhere else
 
 # the name that this object has in the collision environment
 string collision_name
