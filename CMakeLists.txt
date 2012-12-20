@@ -8,6 +8,7 @@ set(MSG_DEPS
   geometry_msgs
   trajectory_msgs
   shape_msgs
+  manipulation_msgs
   octomap_msgs)
 
 find_package(catkin REQUIRED genmsg ${MSG_DEPS})
@@ -67,6 +68,8 @@ GetPositionIK.srv
 
 set(ACT_FILES
 MoveGroup.action
+Pickup.action
+Place.action
 )
 
 add_action_files(DIRECTORY action FILES ${ACT_FILES})

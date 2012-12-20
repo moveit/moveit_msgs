@@ -1,0 +1,63 @@
+# An action for picking up an object
+
+# The diff to consider for the planning scene (optional)
+PlanningScene planning_scene_diff
+
+# which group should be used to plan for pickup
+string group_name
+
+# which end-effector to be used for pickup (ideally descending from the group above)
+string end_effector
+
+# a list of possible grasps to be used. At least one grasp must be filled in
+manipulation_msgs/Grasp[] possible_grasps
+
+# how the object should be lifted after the grasp
+# the frame_id that this lift is specified in MUST be either the robot_frame 
+# or the gripper_frame specified in your hand description file
+manipulation_msgs/GripperTranslation lift
+
+# the name that the support surface (e.g. table) has in the collision map
+# can be left empty if no name is available
+string collision_support_surface_name
+
+# whether collisions between the gripper and the support surface should be acceptable
+# during move from pre-grasp to grasp and during lift. Collisions when moving to the
+# pre-grasp location are still not allowed even if this is set to true.
+bool allow_gripper_support_collision
+
+# whether reactive grasp execution using tactile sensors should be used
+bool use_reactive_execution
+
+# whether reactive object lifting based on tactile sensors should be used
+bool use_reactive_lift
+
+# Optional constraints to be imposed on every point in the motion plan
+Constraints path_constraints
+
+# an optional list of obstacles that we have semantic information about
+# and that can be touched/pushed/moved in the course of grasping
+string[] allowed_touch_objects
+
+# the maximum contact force to use while grasping (<=0 to disable)
+float32 max_contact_force
+
+---
+
+# The overall result of the pickup attempt
+manipulation_msgs/ManipulationResult manipulation_result
+
+# The performed grasp, if attempt was successful
+manipulation_msgs/Grasp grasp
+
+# the complete list of attempted grasp, in the order in which they have been attempted
+# the successful one should be the last one in this list
+manipulation_msgs/Grasp[] attempted_grasps
+
+# the outcomes of the attempted grasps, in the same order as attempted_grasps
+manipulation_msgs/GraspResult[] attempted_grasp_results
+
+---
+
+# The internal state that the pickup action currently is in
+string state

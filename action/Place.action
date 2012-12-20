@@ -1,0 +1,78 @@
+# An action for placing an object
+
+# The diff to consider for the planning scene (optional)
+PlanningScene planning_scene_diff
+
+# which group to be used to plan for grasping
+string group_name
+
+# the name that the attached object to place
+string attached_object_name
+
+# a list of possible transformations for placing the object
+geometry_msgs/PoseStamped[] place_locations
+
+# the grasp that has been executed on this object
+manipulation_msgs/Grasp grasp
+
+# Note that, in general place_location is intended to show where you want the object
+# to go in the world, while grasp is meant to show how the object is grasped
+# (where the hand is relative to the object).
+
+# Ultimately, what matters is where the hand goes when you place the object; this
+# is computed internally by simply multiplying the two transforms above.
+
+# If you already know where you want the hand to go in the world when placing, feel
+# free to put that in the place_location, and make the transform in grasp equal to
+# identity.
+
+# how far the retreat should ideally be away from the place location
+float32 desired_retreat_distance
+
+# the min distance between the retreat and the place location that must actually be feasible 
+# for the place not to be rejected
+float32 min_retreat_distance
+
+# how the place location should be approached
+# the frame_id that this lift is specified in MUST be either the robot_frame 
+# or the gripper_frame specified in your hand description file
+manipulation_msgs/GripperTranslation approach
+
+# the name that the support surface (e.g. table) has in the collision map
+# can be left empty if no name is available
+string collision_support_surface_name
+
+# whether collisions between the gripper and the support surface should be acceptable
+# during move from pre-place to place and during retreat. Collisions when moving to the
+# pre-place location are still not allowed even if this is set to true.
+bool allow_gripper_support_collision
+
+# whether reactive placing based on tactile sensors should be used
+bool use_reactive_place
+
+# how much the object should be padded by when deciding if the grasp
+# location is feasible or not
+float64 place_padding
+
+# Optional constraints to be imposed on every point in the motion plan
+Constraints path_constraints
+
+---
+
+# The result of the pickup attempt
+manipulation_msgs/ManipulationResult manipulation_result
+
+# The successful place location, if any
+geometry_msgs/PoseStamped place_location
+
+# the list of attempted locations, in the order in which they were attempted
+# the successful one should be the last one in this list
+geometry_msgs/PoseStamped[] attempted_locations
+
+# the outcomes of the attempted locations, in the same order as attempted_locations
+manipulation_msgs/PlaceLocationResult[] attempted_location_results
+
+---
+
+# The internal state that the place action currently is in
+string state
