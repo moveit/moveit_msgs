@@ -1,5 +1,8 @@
 # An action for picking up an object
 
+# The name of the object to pick up (as known in the planning scene)
+string target_name
+
 # The diff to consider for the planning scene (optional)
 PlanningScene planning_scene_diff
 
