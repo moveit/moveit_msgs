@@ -9,6 +9,10 @@ string group_name
 # the name that the attached object to place
 string attached_object_name
 
+# If this flag is set to true, the action
+# returns an executable plan in the response but does not attempt execution  
+bool plan_only
+
 # a list of possible transformations for placing the object
 geometry_msgs/PoseStamped[] place_locations
 

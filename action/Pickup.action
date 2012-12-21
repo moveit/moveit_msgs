@@ -9,6 +9,10 @@ string group_name
 # which end-effector to be used for pickup (ideally descending from the group above)
 string end_effector
 
+# If this flag is set to true, the action
+# returns an executable plan in the response but does not attempt execution  
+bool plan_only
+
 # a list of possible grasps to be used. At least one grasp must be filled in
 manipulation_msgs/Grasp[] possible_grasps
 
