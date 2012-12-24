@@ -16,8 +16,8 @@ uint32[] average_count
 # The value to be considered for elements missing from average_count
 uint32 default_average_count
 
-# Set this to true if only the existance of a goal should be evaluated (not a motion plan to it)
-bool evaluate_goal_existance_only
+# Set this to true if only the existence of a goal should be evaluated (not a motion plan to it)
+bool evaluate_goal_existence_only
 
 # The file where to store the results
 string filename
