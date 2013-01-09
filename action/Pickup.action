@@ -19,11 +19,6 @@ bool plan_only
 # a list of possible grasps to be used. At least one grasp must be filled in
 manipulation_msgs/Grasp[] possible_grasps
 
-# how the object should be lifted after the grasp
-# the frame_id that this lift is specified in MUST be either the robot_frame 
-# or the gripper_frame specified in your hand description file
-manipulation_msgs/GripperTranslation lift
-
 # the name that the support surface (e.g. table) has in the collision map
 # can be left empty if no name is available
 string collision_support_surface_name
@@ -48,6 +43,9 @@ string[] allowed_touch_objects
 
 # the maximum contact force to use while grasping (<=0 to disable)
 float32 max_contact_force
+
+# The maximum amount of time the motion planner is allowed to plan for
+duration allowed_planning_time
 
 ---
 
