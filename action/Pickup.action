@@ -50,14 +50,22 @@ duration allowed_planning_time
 ---
 
 # The overall result of the pickup attempt
-manipulation_msgs/ManipulationResult manipulation_result
+MoveItErrorCodes manipulation_result
+
+# The full starting state of the robot at the start of the trajectory
+moveit_msgs/RobotState trajectory_start
+
+# The trajectory that moved group produced for execution
+moveit_msgs/RobotTrajectory[] trajectory_stages
+
+string[] trajectory_descriptions
 
 # The performed grasp, if attempt was successful
-manipulation_msgs/Grasp grasp
+string grasp_id
 
 # the complete list of attempted grasp, in the order in which they have been attempted
 # the successful one should be the last one in this list
-manipulation_msgs/Grasp[] attempted_grasps
+string[] attempted_grasp_ids
 
 # the outcomes of the attempted grasps, in the same order as attempted_grasps
 manipulation_msgs/GraspResult[] attempted_grasp_results

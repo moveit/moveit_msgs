@@ -67,7 +67,7 @@ duration allowed_planning_time
 ---
 
 # The result of the pickup attempt
-manipulation_msgs/ManipulationResult manipulation_result
+MoveItErrorCodes manipulation_result
 
 # The successful place location, if any
 geometry_msgs/PoseStamped place_location
