@@ -26,6 +26,7 @@ Constraints.msg
 CostSource.msg
 ContactInformation.msg
 DisplayTrajectory.msg
+DisplayRobotState.msg
 JointConstraint.msg
 JointLimits.msg
 LinkPadding.msg
