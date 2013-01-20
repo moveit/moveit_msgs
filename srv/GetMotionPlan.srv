@@ -5,14 +5,4 @@ MotionPlanRequest motion_plan_request
 
 ---
 
-# A solution trajectory, if found
-RobotTrajectory trajectory
-
-# The corresponding robot state
-RobotState trajectory_start
-
-# Planning time
-duration planning_time
-
-# Error code - encodes the overall reason for failure
-MoveItErrorCodes error_code
+MotionPlanResponse motion_plan_response

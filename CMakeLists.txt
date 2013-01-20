@@ -31,8 +31,13 @@ JointConstraint.msg
 JointLimits.msg
 LinkPadding.msg
 LinkScale.msg
-MotionPlanDetailedResponse.msg
 MotionPlanRequest.msg
+MotionPlanResponse.msg
+MotionPlanDetailedResponse.msg
+BenchmarkPluginRequest.msg
+BenchmarkPluginResponse.msg
+BenchmarkPipelineRequest.msg
+BenchmarkPipelineResponse.msg
 MoveItErrorCodes.msg
 MultiDOFJointState.msg
 MultiDOFJointTrajectory.msg
@@ -44,6 +49,7 @@ OrientedBoundingBox.msg
 PlannerInterfaceDescription.msg
 PlanningScene.msg
 PlanningSceneWorld.msg
+PlanningOptions.msg
 PositionConstraint.msg
 RobotState.msg
 RobotTrajectory.msg

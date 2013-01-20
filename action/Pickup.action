@@ -3,18 +3,11 @@
 # The name of the object to pick up (as known in the planning scene)
 string target_name
 
-# The diff to consider for the planning scene (optional)
-PlanningScene planning_scene_diff
-
 # which group should be used to plan for pickup
 string group_name
 
 # which end-effector to be used for pickup (ideally descending from the group above)
 string end_effector
-
-# If this flag is set to true, the action
-# returns an executable plan in the response but does not attempt execution  
-bool plan_only
 
 # a list of possible grasps to be used. At least one grasp must be filled in
 manipulation_msgs/Grasp[] possible_grasps
@@ -28,29 +21,24 @@ string collision_support_surface_name
 # pre-grasp location are still not allowed even if this is set to true.
 bool allow_gripper_support_collision
 
-# whether reactive grasp execution using tactile sensors should be used
-bool use_reactive_execution
-
-# whether reactive object lifting based on tactile sensors should be used
-bool use_reactive_lift
-
 # Optional constraints to be imposed on every point in the motion plan
 Constraints path_constraints
 
 # an optional list of obstacles that we have semantic information about
-# and that can be touched/pushed/moved in the course of grasping
+# and that can be touched/pushed/moved in the course of grasping;
+# CAREFUL: If the object name 'all' is used, collisions with all objects are disabled during the approach & lift.
 string[] allowed_touch_objects
-
-# the maximum contact force to use while grasping (<=0 to disable)
-float32 max_contact_force
 
 # The maximum amount of time the motion planner is allowed to plan for
 duration allowed_planning_time
 
+# Planning options
+PlanningOptions planning_options
+
 ---
 
 # The overall result of the pickup attempt
-MoveItErrorCodes manipulation_result
+MoveItErrorCodes error_code
 
 # The full starting state of the robot at the start of the trajectory
 moveit_msgs/RobotState trajectory_start
@@ -61,11 +49,11 @@ moveit_msgs/RobotTrajectory[] trajectory_stages
 string[] trajectory_descriptions
 
 # The performed grasp, if attempt was successful
-string grasp_id
+manipulation_msgs/Grasp grasp
 
 # the complete list of attempted grasp, in the order in which they have been attempted
 # the successful one should be the last one in this list
-string[] attempted_grasp_ids
+manipulation_msgs/Grasp[] attempted_grasps
 
 # the outcomes of the attempted grasps, in the same order as attempted_grasps
 manipulation_msgs/GraspResult[] attempted_grasp_results

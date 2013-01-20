@@ -1,17 +1,10 @@
 # An action for placing an object
 
-# The diff to consider for the planning scene (optional)
-PlanningScene planning_scene_diff
-
 # which group to be used to plan for grasping
 string group_name
 
 # the name that the attached object to place
 string attached_object_name
-
-# If this flag is set to true, the action
-# returns an executable plan in the response but does not attempt execution  
-bool plan_only
 
 # a list of possible transformations for placing the object
 geometry_msgs/PoseStamped[] place_locations
@@ -51,9 +44,6 @@ string collision_support_surface_name
 # pre-place location are still not allowed even if this is set to true.
 bool allow_gripper_support_collision
 
-# whether reactive placing based on tactile sensors should be used
-bool use_reactive_place
-
 # how much the object should be padded by when deciding if the grasp
 # location is feasible or not
 float64 place_padding
@@ -63,6 +53,9 @@ Constraints path_constraints
 
 # The maximum amount of time the motion planner is allowed to plan for
 duration allowed_planning_time
+
+# Planning options
+PlanningOptions planning_options
 
 ---
 
