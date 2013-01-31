@@ -9,8 +9,8 @@ string group_name
 # A solution trajectory, if found
 RobotTrajectory trajectory
 
-# Planning time
-duration planning_time
+# Planning time (seconds)
+float64 planning_time
 
 # Error code - encodes the overall reason for failure
 MoveItErrorCodes error_code

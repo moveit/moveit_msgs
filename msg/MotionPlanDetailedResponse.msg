@@ -15,7 +15,7 @@ RobotTrajectory[] trajectory
 string[] description
 
 # The amount of time spent computing a particular step in motion plan computation 
-duration[] processing_time
+float64[] processing_time
 
 # Status at the end of this plan
 MoveItErrorCodes error_code

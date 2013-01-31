@@ -30,7 +30,7 @@ Constraints path_constraints
 string[] allowed_touch_objects
 
 # The maximum amount of time the motion planner is allowed to plan for
-duration allowed_planning_time
+float64 allowed_planning_time
 
 # Planning options
 PlanningOptions planning_options

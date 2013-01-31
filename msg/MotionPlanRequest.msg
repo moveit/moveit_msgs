@@ -31,5 +31,5 @@ string group_name
 # will be reported.
 int32 num_planning_attempts
 
-# The maximum amount of time the motion planner is allowed to plan for
-duration allowed_planning_time
+# The maximum amount of time the motion planner is allowed to plan for (in seconds)
+float64 allowed_planning_time

@@ -1,2 +1,2 @@
-geometry_msgs/Pose[] poses
+MultiDOFJointValue[] values
 duration time_from_start
