@@ -39,7 +39,6 @@ BenchmarkPluginResponse.msg
 BenchmarkPipelineRequest.msg
 BenchmarkPipelineResponse.msg
 MoveItErrorCodes.msg
-MultiDOFJointValue.msg
 MultiDOFJointState.msg
 MultiDOFJointTrajectory.msg
 MultiDOFJointTrajectoryPoint.msg
