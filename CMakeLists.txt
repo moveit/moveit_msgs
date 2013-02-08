@@ -21,7 +21,6 @@ BoundingVolume.msg
 CollisionMap.msg
 CollisionObject.msg
 ConstraintEvalResult.msg
-ConstraintEvalResults.msg
 Constraints.msg
 CostSource.msg
 ContactInformation.msg
@@ -66,6 +65,7 @@ ConstructConstraintApproximation.srv
 GetMotionPlan.srv
 ExecuteKnownTrajectory.srv
 GetStateValidity.srv
+GetCartesianPath.srv
 QueryPlannerInterfaces.srv
 GetConstraintAwarePositionIK.srv
 GetKinematicSolverInfo.srv

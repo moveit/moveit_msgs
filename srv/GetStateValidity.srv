@@ -1,13 +1,10 @@
-moveit_msgs/RobotState robot_state
-
+RobotState robot_state
 string group_name
-
-moveit_msgs/Constraints[] constraints
+Constraints constraints
 
 ---
 
 bool valid
-
-moveit_msgs/ContactInformation[] contacts
-
-moveit_msgs/CostSource[] cost_sources
+ContactInformation[] contacts
+CostSource[] cost_sources
+ConstraintEvalResult[] constraint_result
