@@ -5,8 +5,6 @@ PositionIKRequest ik_request
 # A set of constraints that the IK must obey
 Constraints constraints
 
-# Maximum allowed time for IK calculation
-duration timeout
 ---
 
 # The returned solution 

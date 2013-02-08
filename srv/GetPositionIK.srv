@@ -2,9 +2,8 @@
 # The inverse kinematics request
 PositionIKRequest ik_request
 
-# Maximum allowed time for IK calculation
-duration timeout
 ---
+
 # The returned solution 
 # (in the same order as the list of joints specified in the IKRequest message)
 RobotState solution
