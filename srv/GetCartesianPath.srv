@@ -1,0 +1,8 @@
+Header header
+RobotState start_state
+geometry_msgs/Pose[] waypoints
+bool avoid_collisions
+Constraints path_constraints
+---
+RobotState start_state
+RobotTrajectory solution
