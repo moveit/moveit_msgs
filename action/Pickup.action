@@ -51,13 +51,6 @@ string[] trajectory_descriptions
 # The performed grasp, if attempt was successful
 manipulation_msgs/Grasp grasp
 
-# the complete list of attempted grasp, in the order in which they have been attempted
-# the successful one should be the last one in this list
-manipulation_msgs/Grasp[] attempted_grasps
-
-# the outcomes of the attempted grasps, in the same order as attempted_grasps
-manipulation_msgs/GraspResult[] attempted_grasp_results
-
 ---
 
 # The internal state that the pickup action currently is in
