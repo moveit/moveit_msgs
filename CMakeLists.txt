@@ -71,6 +71,8 @@ GetConstraintAwarePositionIK.srv
 GetKinematicSolverInfo.srv
 GetPositionFK.srv
 GetPositionIK.srv
+SaveMap.srv
+LoadMap.srv
 )
 
 set(ACT_FILES
