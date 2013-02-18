@@ -21,6 +21,11 @@ bool allow_gripper_support_collision
 # Optional constraints to be imposed on every point in the motion plan
 Constraints path_constraints
 
+# an optional list of obstacles that we have semantic information about
+# and that can be touched/pushed/moved in the course of grasping;
+# CAREFUL: If the object name 'all' is used, collisions with all objects are disabled during the approach & lift.
+string[] allowed_touch_objects
+
 # The maximum amount of time the motion planner is allowed to plan for
 float64 allowed_planning_time
 
