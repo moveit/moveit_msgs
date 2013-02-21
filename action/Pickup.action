@@ -21,6 +21,10 @@ string collision_support_surface_name
 # pre-grasp location are still not allowed even if this is set to true.
 bool allow_gripper_support_collision
 
+# The names of the links the object to be attached is allowed to touch;
+# If this is left empty, it defaults to the links in the used end-effector
+string[] attached_object_touch_links
+
 # Optional constraints to be imposed on every point in the motion plan
 Constraints path_constraints
 
