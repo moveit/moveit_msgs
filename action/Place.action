@@ -11,7 +11,7 @@ manipulation_msgs/PlaceLocation[] place_locations
 
 # the name that the support surface (e.g. table) has in the collision world
 # can be left empty if no name is available
-string collision_support_surface_name
+string support_surface_name
 
 # whether collisions between the gripper and the support surface should be acceptable
 # during move from pre-place to place and during retreat. Collisions when moving to the
@@ -20,6 +20,10 @@ bool allow_gripper_support_collision
 
 # Optional constraints to be imposed on every point in the motion plan
 Constraints path_constraints
+
+# The name of the motion planner to use. If no name is specified,
+# a default motion planner will be used
+string planner_id
 
 # an optional list of obstacles that we have semantic information about
 # and that can be touched/pushed/moved in the course of grasping;
