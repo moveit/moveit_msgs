@@ -9,6 +9,7 @@ set(MSG_DEPS
   trajectory_msgs
   shape_msgs
   manipulation_msgs
+  object_recognition_msgs
   octomap_msgs)
 
 find_package(catkin REQUIRED genmsg ${MSG_DEPS})
@@ -87,4 +88,4 @@ add_service_files(DIRECTORY srv FILES ${SRV_FILES})
 
 generate_messages(DEPENDENCIES ${MSG_DEPS})
 
-catkin_package()
+catkin_package(DEPENDS ${MSG_DEPS})

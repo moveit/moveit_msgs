@@ -1,8 +1,11 @@
 # a header, used for interpreting the poses
 Header header
 
-# the id of the object
+# the id of the object (name used in MoveIt)
 string id
+
+# The object type in a database of known objects
+object_recognition_msgs/ObjectType type
 
 # the the collision geometries associated with the object;
 # their poses are with respect to the specified header
