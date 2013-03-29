@@ -32,3 +32,6 @@ bool replan
 
 # The maximum number of replanning attempts 
 int32 replan_attempts
+
+# The amount of time to wait in between replanning attempts (in seconds)
+float64 replan_delay
