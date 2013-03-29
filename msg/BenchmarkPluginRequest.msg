@@ -2,7 +2,7 @@
 # The scene to consider in the benchmark
 PlanningScene scene
 
-# The problem to benchmannnnbrk
+# The problem to benchmarked
 MotionPlanRequest motion_plan_request
 
 # The planning instances to use in the benchmark
