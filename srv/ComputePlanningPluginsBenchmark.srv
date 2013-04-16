@@ -1,8 +1,0 @@
-# This service contains the definition for a request for benchmark
-# to the motion planner 
-
-BenchmarkPluginRequest benchmark_request
-
----
-
-BenchmarkPluginResponse benchmark_response

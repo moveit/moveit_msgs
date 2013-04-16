@@ -34,10 +34,6 @@ LinkScale.msg
 MotionPlanRequest.msg
 MotionPlanResponse.msg
 MotionPlanDetailedResponse.msg
-BenchmarkPluginRequest.msg
-BenchmarkPluginResponse.msg
-BenchmarkPipelineRequest.msg
-BenchmarkPipelineResponse.msg
 MoveItErrorCodes.msg
 MultiDOFJointState.msg
 MultiDOFJointTrajectory.msg
@@ -60,8 +56,6 @@ PositionIKRequest.msg
 )
 
 set(SRV_FILES
-ComputePlanningPluginsBenchmark.srv
-ComputePlanningPipelineBenchmark.srv
 ConstructConstraintApproximation.srv
 GetMotionPlan.srv
 ExecuteKnownTrajectory.srv

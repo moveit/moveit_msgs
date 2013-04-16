@@ -1,8 +1,0 @@
-# This service contains the definition for a request for benchmark
-# to the planning pipeline
-
-BenchmarkPipelineRequest benchmark_request
-
----
-
-BenchmarkPipelineResponse benchmark_response
