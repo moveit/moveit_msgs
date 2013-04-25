@@ -7,7 +7,7 @@ RobotState start_state
 # Mandatory name of group to compute the path for
 string group_name
 
-# Optional name of IK link for whihc waypoints are specified.
+# Optional name of IK link for which waypoints are specified.
 # If not specified, the tip of the group (which is assumed to be a chain)
 # is assumed to be the link
 string link_name
@@ -17,7 +17,7 @@ string link_name
 # in a straight line between waypoints
 geometry_msgs/Pose[] waypoints
 
-# The maximu distance (in Cartesian space) between consecutive points
+# The maximum distance (in Cartesian space) between consecutive points
 # in the returned path. This must always be specified and > 0
 float64 max_step
 
@@ -41,7 +41,7 @@ RobotState start_state
 # The computed solution trajectory, for the desired group, in configuration space
 RobotTrajectory solution
 
-# If the computatio was incomplete, this value indicates the fraction of the path
+# If the computation was incomplete, this value indicates the fraction of the path
 # that was in fact computed (nr of waypoints traveled through)
 float64 fraction
 
