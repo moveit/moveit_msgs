@@ -1,0 +1,4 @@
+# Get parts of the planning scene that are of interest
+PlanningSceneComponents components
+---
+PlanningScene scene
