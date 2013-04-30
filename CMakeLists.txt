@@ -57,7 +57,6 @@ PositionIKRequest.msg
 )
 
 set(SRV_FILES
-ConstructConstraintApproximation.srv
 GetMotionPlan.srv
 ExecuteKnownTrajectory.srv
 GetStateValidity.srv
