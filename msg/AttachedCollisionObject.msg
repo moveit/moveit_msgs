@@ -11,5 +11,9 @@ CollisionObject object
 # by default - the link_name is already considered by default
 string[] touch_links
 
+# If certain links were placed in a particular posture for this object to remain attached 
+# (e.g., an end effector closing around an object), that posture can be stores here.
+sensor_msgs/JointState attach_posture
+
 # The weight of the attached object, if known
 float64 weight
