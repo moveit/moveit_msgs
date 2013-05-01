@@ -22,12 +22,18 @@ geometry_msgs/Pose[] mesh_poses
 shape_msgs/Plane[] planes
 geometry_msgs/Pose[] plane_poses
 
-# Puts the object into the environment
-#or updates the object if already added
+# Adds the object to the planning scene. If the object previously existed, it is replaced.
 byte ADD=0
 
-# Removes the object from the environment entirely (everything that mages the specified id)
+# Removes the object from the environment entirely (everything that matches the specified id)
 byte REMOVE=1
+
+# Append to an object that already exists in the planning scene. If the does not exist, it is added.
+byte APPEND=2
+
+# If an object already exists in the scene, new poses can be sent (the geometry arrays must be left empty)
+# if solely moving the object is desired
+byte MOVE=3
 
 # Operation to be performed
 byte operation
