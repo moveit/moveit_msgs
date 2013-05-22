@@ -25,6 +25,12 @@ bool allow_gripper_support_collision
 # If this is left empty, it defaults to the links in the used end-effector
 string[] attached_object_touch_links
 
+# Optionally notify the pick action that it should approach the object further,
+# as much as possible (this minimizing the distance to the object before the grasp)
+# along the approach direction; Note: this option changes the grasping poses
+# supplied in possible_grasps[] such that they are closer to the object when possible.
+bool minimize_object_distance
+
 # Optional constraints to be imposed on every point in the motion plan
 Constraints path_constraints
 
