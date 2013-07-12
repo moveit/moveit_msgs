@@ -7,9 +7,6 @@ RobotState robot_state
 # The name of the robot model this scene is for
 string robot_model_name
 
-# The root to be considered for this robot model (if not the default one)
-string robot_model_root
-
 #additional frames for duplicating tf (with respect to the planning frame)
 geometry_msgs/TransformStamped[] fixed_frame_transforms
 
