@@ -2,7 +2,7 @@
 sensor_msgs/JointState joint_state
 
 # Joints that may have multiple DOF are specified here
-MultiDOFJointState multi_dof_joint_state
+sensor_msgs/MultiDOFJointState multi_dof_joint_state
 
 # Attached collision objects (attached to some link on the robot)
 AttachedCollisionObject[] attached_collision_objects

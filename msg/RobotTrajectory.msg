@@ -1,2 +1,2 @@
 trajectory_msgs/JointTrajectory joint_trajectory
-MultiDOFJointTrajectory multi_dof_joint_trajectory
+trajectory_msgs/MultiDOFJointTrajectory multi_dof_joint_trajectory

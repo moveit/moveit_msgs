@@ -35,9 +35,6 @@ MotionPlanRequest.msg
 MotionPlanResponse.msg
 MotionPlanDetailedResponse.msg
 MoveItErrorCodes.msg
-MultiDOFJointState.msg
-MultiDOFJointTrajectory.msg
-MultiDOFJointTrajectoryPoint.msg
 TrajectoryConstraints.msg
 ObjectColor.msg
 OrientationConstraint.msg
