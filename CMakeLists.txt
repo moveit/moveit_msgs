@@ -19,7 +19,6 @@ AllowedCollisionEntry.msg
 AllowedCollisionMatrix.msg
 AttachedCollisionObject.msg
 BoundingVolume.msg
-CollisionMap.msg
 CollisionObject.msg
 ConstraintEvalResult.msg
 Constraints.msg
