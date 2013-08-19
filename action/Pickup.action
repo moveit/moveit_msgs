@@ -12,6 +12,12 @@ string end_effector
 # a list of possible grasps to be used. At least one grasp must be filled in
 manipulation_msgs/Grasp[] possible_grasps
 
+# Possible Pickup directions - This is the direction 
+# that the object will be moved in after pickup
+# These are assumed to be specified in the same 
+# frame as the grasp pose
+manipulation_msgs/GripperTranslation[] pickup_directions
+
 # the name that the support surface (e.g. table) has in the collision map
 # can be left empty if no name is available
 string support_surface_name
