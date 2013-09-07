@@ -21,7 +21,6 @@
   <build_depend>geometry_msgs</build_depend>
   <build_depend>trajectory_msgs</build_depend>
   <build_depend>shape_msgs</build_depend>
-  <build_depend>manipulation_msgs</build_depend>
   <build_depend>object_recognition_msgs</build_depend>
   <build_depend>std_msgs</build_depend>
 
@@ -32,7 +31,6 @@
   <run_depend>geometry_msgs</run_depend>
   <run_depend>trajectory_msgs</run_depend>
   <run_depend>shape_msgs</run_depend>
-  <run_depend>manipulation_msgs</run_depend>
   <run_depend>object_recognition_msgs</run_depend>
   <run_depend>std_msgs</run_depend>
 

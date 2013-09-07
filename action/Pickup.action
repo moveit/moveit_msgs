@@ -10,7 +10,7 @@ string group_name
 string end_effector
 
 # a list of possible grasps to be used. At least one grasp must be filled in
-manipulation_msgs/Grasp[] possible_grasps
+Grasp[] possible_grasps
 
 # the name that the support surface (e.g. table) has in the collision map
 # can be left empty if no name is available
@@ -55,15 +55,15 @@ PlanningOptions planning_options
 MoveItErrorCodes error_code
 
 # The full starting state of the robot at the start of the trajectory
-moveit_msgs/RobotState trajectory_start
+RobotState trajectory_start
 
 # The trajectory that moved group produced for execution
-moveit_msgs/RobotTrajectory[] trajectory_stages
+RobotTrajectory[] trajectory_stages
 
 string[] trajectory_descriptions
 
 # The performed grasp, if attempt was successful
-manipulation_msgs/Grasp grasp
+Grasp grasp
 
 ---
 

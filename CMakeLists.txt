@@ -8,7 +8,6 @@ set(MSG_DEPS
   geometry_msgs
   trajectory_msgs
   shape_msgs
-  manipulation_msgs
   object_recognition_msgs
   octomap_msgs)
 
@@ -26,6 +25,8 @@ CostSource.msg
 ContactInformation.msg
 DisplayTrajectory.msg
 DisplayRobotState.msg
+Grasp.msg
+GripperTranslation.msg
 JointConstraint.msg
 JointLimits.msg
 LinkPadding.msg
@@ -38,6 +39,7 @@ TrajectoryConstraints.msg
 ObjectColor.msg
 OrientationConstraint.msg
 OrientedBoundingBox.msg
+PlaceLocation.msg
 PlannerInterfaceDescription.msg
 PlanningScene.msg
 PlanningSceneComponents.msg

@@ -7,7 +7,7 @@ string group_name
 string attached_object_name
 
 # a list of possible transformations for placing the object
-manipulation_msgs/PlaceLocation[] place_locations
+PlaceLocation[] place_locations
 
 # the name that the support surface (e.g. table) has in the collision world
 # can be left empty if no name is available
@@ -42,15 +42,15 @@ PlanningOptions planning_options
 MoveItErrorCodes error_code
 
 # The full starting state of the robot at the start of the trajectory
-moveit_msgs/RobotState trajectory_start
+RobotState trajectory_start
 
 # The trajectory that moved group produced for execution
-moveit_msgs/RobotTrajectory[] trajectory_stages
+RobotTrajectory[] trajectory_stages
 
 string[] trajectory_descriptions
 
 # The successful place location, if any
-geometry_msgs/PoseStamped place_location
+PlaceLocation place_location
 
 ---
 
