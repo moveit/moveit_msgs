@@ -23,9 +23,10 @@ GripperTranslation pre_grasp_approach
 GripperTranslation post_grasp_retreat
 
 # The retreat motion to perform when releasing the object; this information
-# is not necessary for the grasp itself, but the soon to be attached object 
-# needs to know how it should be disconnected from the robot, so this is in 
-# fact information that needs to be passed in at the moment the grasp completed.
+# is not necessary for the grasp itself, but when releasing the object,
+# the information will be necessary. The grasp used to perform a pickup
+# is returned as part of the result, so this information is available for 
+# later use.
 GripperTranslation post_place_retreat
 
 # the maximum contact force to use while grasping (<=0 to disable)
