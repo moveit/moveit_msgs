@@ -9,6 +9,10 @@ string attached_object_name
 # a list of possible transformations for placing the object
 PlaceLocation[] place_locations
 
+# if the user prefers setting the eef pose (same as in pick) rather than 
+# the location of an end effector, this flag should be set to true
+bool place_eef
+
 # the name that the support surface (e.g. table) has in the collision world
 # can be left empty if no name is available
 string support_surface_name
