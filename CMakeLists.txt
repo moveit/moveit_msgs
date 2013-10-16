@@ -45,6 +45,7 @@ PlanningScene.msg
 PlanningSceneComponents.msg
 PlanningSceneWorld.msg
 PlanningOptions.msg
+PoseTwist.msg
 PositionConstraint.msg
 RobotState.msg
 RobotTrajectory.msg
