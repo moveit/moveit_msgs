@@ -18,6 +18,9 @@ moveit_msgs/RobotTrajectory planned_trajectory
 # The trace of the trajectory recorded during execution
 moveit_msgs/RobotTrajectory executed_trajectory
 
+# The amount of time it took to complete the motion plan
+float32 planning_time
+
 ---
 
 # The internal state that the move arm action currently is in
