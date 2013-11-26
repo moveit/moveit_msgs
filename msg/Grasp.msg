@@ -1,3 +1,11 @@
+# This message contains a description of a grasp that would be used
+# with a particular end-effector to grasp an object, including how to
+# approach it, grip it, etc.  This message does not contain any
+# information about a "grasp point" (a position ON the object).
+# Whatever generates this message should have already combined
+# information about grasp points with information about the geometry
+# of the end-effector to compute the grasp_pose in this message.
+
 # A name for this grasp
 string id
 
@@ -9,7 +17,10 @@ trajectory_msgs/JointTrajectory pre_grasp_posture
 # positions and efforts are used
 trajectory_msgs/JointTrajectory grasp_posture
 
-# The position of the end-effector for the grasp 
+# The position of the end-effector for the grasp.  This is the pose of
+# the "parent_link" of the end-effector, not actually the pose of any
+# link *in* the end-effector.  Typically this would be the pose of the
+# most distal wrist link before the hand (end-effector) links began.
 geometry_msgs/PoseStamped grasp_pose
 
 # The estimated probability of success for this grasp, or some other
