@@ -2,6 +2,11 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Added some verbose explanatory comments to Grasp message.
+* Added planning time to move group action result.
+
 0.5.2 (2013-09-23)
 ------------------
 * add diff flag for RobotState
