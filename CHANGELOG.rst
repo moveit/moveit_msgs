@@ -2,8 +2,8 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.5.3 (2013-12-03)
+------------------
 * Added some verbose explanatory comments to Grasp message.
 * Added planning time to move group action result.
 
