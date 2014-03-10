@@ -2,8 +2,8 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.5.4 (2014-03-10)
+------------------
 * update e-mail addresses
 * Contributors: Ioan Sucan
 
