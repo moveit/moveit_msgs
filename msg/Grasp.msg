@@ -21,6 +21,11 @@ trajectory_msgs/JointTrajectory grasp_posture
 # the "parent_link" of the end-effector, not actually the pose of any
 # link *in* the end-effector.  Typically this would be the pose of the
 # most distal wrist link before the hand (end-effector) links began.
+#
+# If grasp_pose.header.frame_id is empty, the frame is assumed to
+# match that of the object being grasped.  The pose of the object
+# being grasped is assumed to be the pose of the first shape in the
+# object's list of shapes.
 geometry_msgs/PoseStamped grasp_pose
 
 # The estimated probability of success for this grasp, or some other
