@@ -33,3 +33,6 @@ int32 num_planning_attempts
 
 # The maximum amount of time the motion planner is allowed to plan for (in seconds)
 float64 allowed_planning_time
+
+# The motion time factor for trajectory execution
+float64 motion_execution_time_factor
