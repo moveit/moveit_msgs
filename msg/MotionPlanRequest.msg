@@ -34,5 +34,7 @@ int32 num_planning_attempts
 # The maximum amount of time the motion planner is allowed to plan for (in seconds)
 float64 allowed_planning_time
 
-# The motion time factor for trajectory execution
-float64 motion_execution_time_factor
+# The scaling factor for optionally scaling down the allowed maximum joint
+# velocities. The valid range is (0,1]. If a number outside this range is
+# specified, the 1.0 default value (i.e. max joint velocity) is used internally.
+float64 max_velocity_scaling_factor
