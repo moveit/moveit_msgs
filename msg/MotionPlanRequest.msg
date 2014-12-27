@@ -37,4 +37,10 @@ float64 allowed_planning_time
 # The scaling factor for optionally scaling down the allowed maximum joint
 # velocities. The valid range is (0,1]. If a number outside this range is
 # specified, the 1.0 default value (i.e. max joint velocity) is used internally.
+
+# The scaling factor for optionally reducing the maximum joint velocity.
+# Allowed values are in (0,1]. The maximum joint velocity specified
+# in the robot model is multiplied by the factor. If outside valid range
+# (imporantly, this includes it being set to 0.0), the factor is set to a
+# default value of 1.0 internally (i.e. maximum joint velocity)
 float64 max_velocity_scaling_factor
