@@ -67,6 +67,12 @@ GetPositionFK.srv
 GetPositionIK.srv
 SaveMap.srv
 LoadMap.srv
+SaveRobotStateToWarehouse.srv
+ListRobotStatesInWarehouse.srv
+GetRobotStateFromWarehouse.srv
+CheckIfRobotStateExistsInWarehouse.srv
+RenameRobotStateInWarehouse.srv
+DeleteRobotStateFromWarehouse.srv
 )
 
 set(ACT_FILES
