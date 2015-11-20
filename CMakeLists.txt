@@ -41,6 +41,7 @@ OrientationConstraint.msg
 OrientedBoundingBox.msg
 PlaceLocation.msg
 PlannerInterfaceDescription.msg
+PlannerParams.msg
 PlanningScene.msg
 PlanningSceneComponents.msg
 PlanningSceneWorld.msg
@@ -65,6 +66,8 @@ GetConstraintAwarePositionIK.srv
 GetKinematicSolverInfo.srv
 GetPositionFK.srv
 GetPositionIK.srv
+GetPlannerParams.srv
+SetPlannerParams.srv
 SaveMap.srv
 LoadMap.srv
 SaveRobotStateToWarehouse.srv
