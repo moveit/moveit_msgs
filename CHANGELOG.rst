@@ -2,8 +2,8 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.7.0 (2016-01-30)
+------------------
 * add db state
 * added services for delete and rename
 * added services for warehouse access
