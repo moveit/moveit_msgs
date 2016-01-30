@@ -2,6 +2,13 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* add db state
+* added services for delete and rename
+* added services for warehouse access
+* Contributors: Sachin Chitta, dg
+
 0.6.1 (2015-01-08)
 ------------------
 * Add max_velocity_scaling_factor to MotionPlanRequest.
