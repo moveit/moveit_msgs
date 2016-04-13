@@ -2,6 +2,11 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Adding acceleration scaling factor `#17 <https://github.com/ros-planning/moveit_msgs/issues/17>`_ 
+* Contributors: Dave Coleman, hemes
+
 0.7.0 (2016-01-30)
 ------------------
 * add db state
