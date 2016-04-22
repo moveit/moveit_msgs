@@ -2,6 +2,13 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
++Forthcoming
++-----------
+* [feat] **MD5 change** Adding acceleration scaling factor (Cherry-pick `#17 <https://github.com/ros-planning/moveit_msgs/issues/17>`_ into jade) `#20 <https://github.com/ros-planning/moveit_msgs/issues/20>`_
+* [feat] added services for warehouse access, delete and rename `#14 <https://github.com/ros-planning/moveit_msgs/issues/14>`_ 
+* [sys] Update Travis conf for Ubuntu Trusty and ROS Jade. Add ROS prerelease test.
+* Contributors: Dave Coleman, Robert Haschke, Sachin Chitta, dg, hemes, Isaac I.Y. Saito
+
 0.6.1 (2015-01-08)
 ------------------
 * Add max_velocity_scaling_factor to MotionPlanRequest.
