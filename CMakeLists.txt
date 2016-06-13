@@ -60,6 +60,7 @@ ExecuteKnownTrajectory.srv
 GetStateValidity.srv
 GetCartesianPath.srv
 GetPlanningScene.srv
+ApplyPlanningScene.srv
 QueryPlannerInterfaces.srv
 GetConstraintAwarePositionIK.srv
 GetKinematicSolverInfo.srv
