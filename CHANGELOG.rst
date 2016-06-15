@@ -2,6 +2,14 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* [feat] add new srv ApplyPlanningScene `#21 <https://github.com/ros-planning/moveit_msgs/issues/21>`_  
+  This service takes a PlanningScene message and applies it to the monitored scene. Ideally it should include a `bool success` field, but it is not possible to apply the scene and check for success without ABI changes, so leave it out for now. To get this change pushed to indigo.
+* [feat] apply_planning_scene: add a success field in response
+  This will be set to true in indigo, but might return false in kinetic and upcoming after we broke the underlying API to get that information.
+* Contributors: Dave Coleman, Michael Gè´”rner
+
 0.7.1 (2016-04-13)
 ------------------
 * Adding acceleration scaling factor `#17 <https://github.com/ros-planning/moveit_msgs/issues/17>`_ 
