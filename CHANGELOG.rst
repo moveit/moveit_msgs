@@ -2,12 +2,25 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-+Forthcoming
-+-----------
+Forthcoming
+-----------
+* [feat] add new srv ApplyPlanningScene `#21 <https://github.com/ros-planning/moveit_msgs/issues/21>`_  
+  This service takes a PlanningScene message and applies it to the monitored scene. Ideally it should include a `bool success` field, but it is not possible to apply the scene and check for success without ABI changes, so leave it out for now. To get this change pushed to indigo.
+* [feat] apply_planning_scene: add a success field in response
+  This will be set to true in indigo, but might return false in kinetic and upcoming after we broke the underlying API to get that information.
+* Contributors: Dave Coleman, Michael Gè´”rner
+
+0.7.1 (2016-04-13)
+------------------
 * [feat] **MD5 change** Adding acceleration scaling factor (Cherry-pick `#17 <https://github.com/ros-planning/moveit_msgs/issues/17>`_ into jade) `#20 <https://github.com/ros-planning/moveit_msgs/issues/20>`_
-* [feat] added services for warehouse access, delete and rename `#14 <https://github.com/ros-planning/moveit_msgs/issues/14>`_ 
-* [sys] Update Travis conf for Ubuntu Trusty and ROS Jade. Add ROS prerelease test.
-* Contributors: Dave Coleman, Robert Haschke, Sachin Chitta, dg, hemes, Isaac I.Y. Saito
+* Contributors: Dave Coleman, hemes
+
+0.7.0 (2016-01-30)
+------------------
+* add db state
+* added services for delete and rename
+* added services for warehouse access
+* Contributors: Sachin Chitta, dg
 
 0.6.1 (2015-01-08)
 ------------------
