@@ -77,6 +77,7 @@ DeleteRobotStateFromWarehouse.srv
 )
 
 set(ACT_FILES
+ExecuteKnownTrajectory.action
 MoveGroup.action
 Pickup.action
 Place.action
