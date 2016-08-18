@@ -6,12 +6,6 @@ RobotTrajectory trajectory
 # Error code - encodes the overall reason for failure
 MoveItErrorCodes error_code
 
-# The full starting state of the robot at the start of the trajectory
-moveit_msgs/RobotState trajectory_start
-
-# The trace of the trajectory recorded during execution
-moveit_msgs/RobotTrajectory executed_trajectory
-
 ---
 
 # The internal state that the move group action currently is in
