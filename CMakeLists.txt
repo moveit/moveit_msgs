@@ -77,6 +77,7 @@ DeleteRobotStateFromWarehouse.srv
 )
 
 set(ACT_FILES
+ExecutePath.action
 MoveGroup.action
 Pickup.action
 Place.action
