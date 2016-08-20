@@ -80,7 +80,7 @@ DeleteRobotStateFromWarehouse.srv
 )
 
 set(ACT_FILES
-ExecutePath.action
+ExecuteTrajectory.action
 MoveGroup.action
 Pickup.action
 Place.action
