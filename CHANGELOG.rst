@@ -2,8 +2,8 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.8.3 (2016-08-22)
+------------------
 * [fix] broken maintainer tags (`#28 <https://github.com/ros-planning/moveit_msgs/issues/28>`_)
 * Contributors: Michael Goerner
 
