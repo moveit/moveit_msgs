@@ -1,0 +1,27 @@
+# Requests that grasp planning be performed for the target
+# returns a list of grasps to be tested and executed
+
+# the planning group used
+string group_name
+
+# the object to be grasped
+CollisionObject target
+
+# the name that the support surface (e.g. table) has in the collision map
+# can be left empty if no name is available
+string collision_support_surface_name
+
+# an optional list of grasps to be evaluated by the planner
+Grasp[] grasps_to_evaluate
+
+# an optional list of obstacles that we have semantic information about
+# and that can be moved in the course of grasping
+CollisionObject[] movable_obstacles
+
+---
+
+# the list of planned grasps
+Grasp[] grasps
+
+# whether an error occurred
+MoveItErrorCodes error_code
