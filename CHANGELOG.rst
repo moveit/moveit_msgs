@@ -2,6 +2,13 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* [capability] new GraspPlanning service to replace manipulation_msgs version (`#32 <https://github.com/ros-planning/moveit_msgs/issues/32>`_)
+* [maintenance] Switch travis to moveit_ci (`#31 <https://github.com/ros-planning/moveit_msgs/issues/31>`_)
+* [enhancement] Add note in ExecuteKnownTrajectory service to recommend ExecuteTrajectory action. `#29 <https://github.com/ros-planning/moveit_msgs/issues/29>`_
+* Contributors: Dave Coleman, Isaac I.Y. Saito, Jntzko
+
 0.8.3 (2016-08-22)
 ------------------
 * [fix] broken maintainer tags (`#28 <https://github.com/ros-planning/moveit_msgs/issues/28>`_)
