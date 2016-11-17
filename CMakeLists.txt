@@ -64,8 +64,6 @@ GetPlanningScene.srv
 GraspPlanning.srv
 ApplyPlanningScene.srv
 QueryPlannerInterfaces.srv
-GetConstraintAwarePositionIK.srv
-GetKinematicSolverInfo.srv
 GetPositionFK.srv
 GetPositionIK.srv
 GetPlannerParams.srv
