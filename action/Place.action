@@ -56,6 +56,8 @@ string[] trajectory_descriptions
 # The successful place location, if any
 PlaceLocation place_location
 
+# The amount of time in seconds it took to complete the plan
+float64 planning_time
 ---
 
 # The internal state that the place action currently is in
