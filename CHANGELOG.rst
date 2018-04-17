@@ -2,6 +2,11 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* [capability] Add fields to store planning time in pick-and-place `#43 <https://github.com/ros-planning/moveit_msgs/issues/43>`_
+* Contributors: Akiyoshi Ochiai
+
 0.9.1 (2017-02-06)
 ------------------
 * [improve] Removed identical services per issue and unused service `#4 <https://github.com/ros-planning/moveit_msgs/issues/4>`_
