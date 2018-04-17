@@ -1,6 +1,6 @@
 <package>
   <name>moveit_msgs</name>
-  <version>0.9.1</version>
+  <version>0.10.0</version>
   <description>Messages, services and actions used by MoveIt</description>
   <author email="isucan@google.com">Ioan Sucan</author>
   <author email="sachinc@sri.com">Sachin Chitta</author>
