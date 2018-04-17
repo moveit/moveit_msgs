@@ -65,6 +65,8 @@ string[] trajectory_descriptions
 # The performed grasp, if attempt was successful
 Grasp grasp
 
+# The amount of time in seconds it took to complete the plan
+float64 planning_time
 ---
 
 # The internal state that the pickup action currently is in
