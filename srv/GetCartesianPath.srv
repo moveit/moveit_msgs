@@ -12,18 +12,32 @@ string group_name
 # is assumed to be the link
 string link_name
 
-# A sequence of waypoints to be followed by the specified link, 
+# A sequence of waypoints to be followed by the specified link,
 # while moving the specified group, such that the group moves only
 # in a straight line between waypoints
 geometry_msgs/Pose[] waypoints
 
 # The maximum distance (in Cartesian space) between consecutive points
-# in the returned path. This must always be specified and > 0
+# in the returned path. This value is recycled and used to check the
+# generated path for large jumps. The filtering algorithm takes the midpoint
+# between points in the trajectory and solves the FK. If the position at the
+# midpoint is further than max_step from either the preceding point or the
+# following point, then the returned path is truncated up to just before the
+# jump. This must always be specified and > 0
 float64 max_step
 
-# If above 0, this value is assumed to be the maximum allowed distance 
+# The maximum rotational distance (in Cartesian space) between consecutive
+# points in the returned path. This value is recycled and used to check the
+# generated path for large jumps. The filtering algorithm takes the midpoint
+# between points in the trajectory and solves the FK. If the orientation at
+# the midpoint is further than max_rotation_step from either the preceding
+# or following point, then the returned path is truncated up to just before
+# the jump. If specified, the value must be > 0
+float64 max_rotation_step
+
+# If above 0, this value is assumed to be the maximum allowed distance
 # (L infinity) in configuration space, between consecutive points.
-# If this distance is found to be above the maximum threshold, the path 
+# If this distance is found to be above the maximum threshold, the path
 # computation fails.
 float64 jump_threshold
 
