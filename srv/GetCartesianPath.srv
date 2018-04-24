@@ -12,7 +12,7 @@ string group_name
 # is assumed to be the link
 string link_name
 
-# A sequence of waypoints to be followed by the specified link, 
+# A sequence of waypoints to be followed by the specified link,
 # while moving the specified group, such that the group moves only
 # in a straight line between waypoints
 geometry_msgs/Pose[] waypoints
@@ -21,11 +21,23 @@ geometry_msgs/Pose[] waypoints
 # in the returned path. This must always be specified and > 0
 float64 max_step
 
-# If above 0, this value is assumed to be the maximum allowed distance 
-# (L infinity) in configuration space, between consecutive points.
-# If this distance is found to be above the maximum threshold, the path 
-# computation fails.
+# If jump_threshold set above 0 then it acts as a scaling factor that is
+# used to filter out large relative jumps in the generated Cartesian path
+# before it is returned. The average joint-space distance between consecutive
+# points in the trajectory is computed. If any individual joint-space motion
+# delta is larger then this average distance by a factor of
+# jump_threshold_factor, then this step is considered a jump and the returned
+# path is truncated just before the jump.
 float64 jump_threshold
+
+# If prismatic_jump_threshold or revolute_jump_threshold is set > 0 then for
+# each active, the joint-space difference between consecutive waypoints is
+# computed and compared to the absolute threshold: prismatic_jump_threshold
+# for prismatic joints and revolute_jump_threshold for revolute joints. If
+# these thresholds are exceeded, then this step is considered a jump and the
+# returned path is truncated just before the jump.
+float64 prismatic_jump_threshold
+float64 revolute_jump_threshold
 
 # Set to true if collisions should be avoided when possible
 bool avoid_collisions
@@ -42,7 +54,7 @@ RobotState start_state
 RobotTrajectory solution
 
 # If the computation was incomplete, this value indicates the fraction of the path
-# that was in fact computed (nr of waypoints traveled through)
+# that was in fact computed (number of waypoints traveled through)
 float64 fraction
 
 # The error code of the computation
