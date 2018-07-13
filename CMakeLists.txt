@@ -18,6 +18,8 @@ AllowedCollisionEntry.msg
 AllowedCollisionMatrix.msg
 AttachedCollisionObject.msg
 BoundingVolume.msg
+CartesianTrajectory.msg
+CartesianTrajectoryPoint.msg
 CollisionObject.msg
 ConstraintEvalResult.msg
 Constraints.msg
@@ -25,10 +27,10 @@ CostSource.msg
 ContactInformation.msg
 DisplayTrajectory.msg
 DisplayRobotState.msg
+GenericTrajectory.msg
 Grasp.msg
 GripperTranslation.msg
 JointConstraint.msg
-JointOrCartesianTrajectory.msg
 JointLimits.msg
 LinkPadding.msg
 LinkScale.msg

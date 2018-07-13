@@ -20,8 +20,8 @@ Constraints path_constraints
 # The constraints the resulting trajectory must satisfy
 TrajectoryConstraints trajectory_constraints
 
-# A set of trajectories to be used as seed trajectories for optimization-based planners
-JointOrCartesianTrajectory[] seed_trajectories
+# A set of trajectories to be used as reference or seed trajectories for planners
+GenericTrajectory[] reference_trajectories
 
 # The name of the motion planner to use. If no name is specified,
 # a default motion planner will be used
