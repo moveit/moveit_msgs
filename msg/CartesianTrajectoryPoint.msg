@@ -2,11 +2,11 @@ geometry_msgs/Pose pose
 geometry_msgs/Twist velocity
 geometry_msgs/Accel acceleration
 
-geometry_msgs/Twist pose_upper_tolerance
-geometry_msgs/Twist pose_lower_tolerance
+geometry_msgs/Pose pose_upper_tolerance
+geometry_msgs/Pose pose_lower_tolerance
 
-geometry_msgs/Accel velocity_upper_tolerance
-geometry_msgs/Accel velocity_lower_tolerance
+geometry_msgs/Twist velocity_upper_tolerance
+geometry_msgs/Twist velocity_lower_tolerance
 
 geometry_msgs/Accel acceleration_upper_tolerance
 geometry_msgs/Accel acceleration_lower_tolerance
