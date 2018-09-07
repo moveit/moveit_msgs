@@ -1,24 +1,24 @@
-# a header, used for interpreting the poses
+# A header, used for interpreting the poses
 Header header
 
-# the id of the object (name used in MoveIt)
+# The id of the object (name used in MoveIt)
 string id
 
 # The object type in a database of known objects
 object_recognition_msgs/ObjectType type
 
-# the the collision geometries associated with the object;
-# their poses are with respect to the specified header
+# The collision geometries associated with the object.
+# Their poses are with respect to the specified header
 
-# solid geometric primitives
+# Solid geometric primitives
 shape_msgs/SolidPrimitive[] primitives
 geometry_msgs/Pose[] primitive_poses
 
-# meshes
+# Meshes
 shape_msgs/Mesh[] meshes
 geometry_msgs/Pose[] mesh_poses
 
-# bounding planes (equation is specified, but the plane can be oriented using an additional pose)
+# Bounding planes (equation is specified, but the plane can be oriented using an additional pose)
 shape_msgs/Plane[] planes
 geometry_msgs/Pose[] plane_poses
 
