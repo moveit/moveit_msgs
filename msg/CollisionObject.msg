@@ -22,6 +22,12 @@ geometry_msgs/Pose[] mesh_poses
 shape_msgs/Plane[] planes
 geometry_msgs/Pose[] plane_poses
 
+# List of other objects that this one is rigidly connected to. Objects that are connected move and
+# get attached together, as if they are a single object. Objects that do not exist in the world 
+# get removed from the list. Every entry in this list constitutes an attempt to connect this object
+# and the other object in the current world scene.
+string[] connected_objects
+
 # Named frames on the object. Use these to define points of interest on the object that you want
 # to plan with (e.g. screwdriver_tip, kettle_spout, mug_base).
 # The length of these vectors has to be identical.
