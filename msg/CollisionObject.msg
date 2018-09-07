@@ -22,6 +22,12 @@ geometry_msgs/Pose[] mesh_poses
 shape_msgs/Plane[] planes
 geometry_msgs/Pose[] plane_poses
 
+# Named frames on the object. Use these to define points of interest on the object that you want
+# to plan with (e.g. screwdriver_tip, kettle_spout, mug_base).
+# The length of these vectors has to be identical.
+string[] frame_names
+geometry_msgs/Pose[] named_frames
+
 # Adds the object to the planning scene. If the object previously existed, it is replaced.
 byte ADD=0
 
