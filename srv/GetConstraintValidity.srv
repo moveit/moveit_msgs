@@ -1,6 +1,14 @@
+# This service changes the reference frames of constraints. It is used when constraints are
+# expressed for an attached body (or one of its frames). The resulting constraints are
+# transformed so that they only reference valid robot links, which can be understood
+# by the planner.
+
+# Constraints that may be defined for frames that are on attached bodies and need to be 
+# transformed to a robot link.
 Constraints constraints
 
 ---
 
+# False if the transformation was not successful
 bool valid
 Constraints constraints
