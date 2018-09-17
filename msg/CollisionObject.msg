@@ -26,7 +26,7 @@ geometry_msgs/Pose[] plane_poses
 # to plan with (e.g. screwdriver_tip, kettle_spout, mug_base).
 # The length of these vectors has to be identical.
 string[] frame_names
-geometry_msgs/Pose[] named_frames
+geometry_msgs/Pose[] frame_poses
 
 # Adds the object to the planning scene. If the object previously existed, it is replaced.
 byte ADD=0
