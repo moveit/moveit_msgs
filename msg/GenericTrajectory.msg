@@ -1,3 +1,3 @@
 Header header
 trajectory_msgs/JointTrajectory joint_trajectory
-geometry_msgs/TransformStamped[] cartesian_trajectory
+moveit_msgs/CartesianTrajectory[] cartesian_trajectory
