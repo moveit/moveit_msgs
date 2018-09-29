@@ -1,3 +1,6 @@
 Header header
-string eef_frame
+
+# The name of the Cartesian frame the trajectory describes it's motion of.
+string frame
+
 CartesianTrajectoryPoint[] points
