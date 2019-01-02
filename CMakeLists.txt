@@ -27,6 +27,7 @@ DisplayTrajectory.msg
 DisplayRobotState.msg
 Grasp.msg
 GripperTranslation.msg
+JogJoint.msg
 JointConstraint.msg
 JointLimits.msg
 LinkPadding.msg
