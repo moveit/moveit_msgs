@@ -1,7 +1,7 @@
 # Used in time-stamping the message.
 Header header
 
-# Name list of the joints. You don't need to specify all joint of the
+# Name list of the joints. You don't need to specify all joints of the
 # robot. Joint names are case-sensitive.
 string[] joint_names
 
