@@ -1,7 +1,7 @@
 # Standard ROS header contains information 
 # about the frame in which this 
 # contact is specified
-Header header
+std_msgs/Header header
 
 # Position of the contact point
 geometry_msgs/Point position

@@ -1,6 +1,6 @@
 # This message contains the definition of a position constraint.
 
-Header header
+std_msgs/Header header
 
 # The robot link this constraint refers to
 string link_name

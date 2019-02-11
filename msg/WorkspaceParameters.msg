@@ -4,7 +4,7 @@
 # the robot as well.
 
 # Define the frame of reference for the box corners
-Header header
+std_msgs/Header header
 
 # The minumum corner of the box, with respect to the robot starting pose
 geometry_msgs/Vector3 min_corner

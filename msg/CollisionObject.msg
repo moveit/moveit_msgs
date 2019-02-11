@@ -1,5 +1,5 @@
 # a header, used for interpreting the poses
-Header header
+std_msgs/Header header
 
 # the id of the object (name used in MoveIt)
 string id
