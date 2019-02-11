@@ -1,5 +1,7 @@
 # MoveIt! Msgs
 
+## This fork is part of Acutronic Robotics' efforts in the migration of Moveit! to ROS 2.0
+
 This package includes the ROS messages specific to MoveIt!
 
 ## Travis - Continuous Integration

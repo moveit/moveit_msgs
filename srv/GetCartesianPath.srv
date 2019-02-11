@@ -1,5 +1,5 @@
 # Define the frame for the specified waypoints
-Header header
+std_msgs/Header header
 
 # The start at which to start the Cartesian path
 RobotState start_state

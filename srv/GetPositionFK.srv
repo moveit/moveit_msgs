@@ -1,7 +1,7 @@
 # A service definition for a standard forward kinematics service
 # The frame_id in the header message is the frame in which 
 # the forward kinematics poses will be returned
-Header header
+std_msgs/Header header
 
 # A vector of link name for which forward kinematics must be computed
 string[] fk_link_names

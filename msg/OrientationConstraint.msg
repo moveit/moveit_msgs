@@ -1,6 +1,6 @@
 # This message contains the definition of an orientation constraint.
 
-Header header
+std_msgs/Header header
 
 # The desired orientation of the robot link specified as a quaternion
 geometry_msgs/Quaternion orientation

@@ -1,94 +1,113 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(moveit_msgs)
 
-set(MSG_DEPS
-  std_msgs
-  actionlib_msgs
-  sensor_msgs
-  geometry_msgs
-  trajectory_msgs
-  shape_msgs
-  object_recognition_msgs
-  octomap_msgs)
+# Default to C++14
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 14)
+endif()
 
-find_package(catkin REQUIRED genmsg ${MSG_DEPS})
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wpedantic")
+endif()
 
-set(MSG_FILES
-AllowedCollisionEntry.msg
-AllowedCollisionMatrix.msg
-AttachedCollisionObject.msg
-BoundingVolume.msg
-CollisionObject.msg
-ConstraintEvalResult.msg
-Constraints.msg
-CostSource.msg
-ContactInformation.msg
-DisplayTrajectory.msg
-DisplayRobotState.msg
-Grasp.msg
-GripperTranslation.msg
-JointConstraint.msg
-JointLimits.msg
-LinkPadding.msg
-LinkScale.msg
-MotionPlanRequest.msg
-MotionPlanResponse.msg
-MotionPlanDetailedResponse.msg
-MoveItErrorCodes.msg
-TrajectoryConstraints.msg
-ObjectColor.msg
-OrientationConstraint.msg
-OrientedBoundingBox.msg
-PlaceLocation.msg
-PlannerInterfaceDescription.msg
-PlannerParams.msg
-PlanningScene.msg
-PlanningSceneComponents.msg
-PlanningSceneWorld.msg
-PlanningOptions.msg
-PositionConstraint.msg
-RobotState.msg
-RobotTrajectory.msg
-VisibilityConstraint.msg
-WorkspaceParameters.msg
-KinematicSolverInfo.msg
-PositionIKRequest.msg
+find_package(ament_cmake REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+find_package(action_msgs REQUIRED)
+find_package(builtin_interfaces REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(shape_msgs REQUIRED)
+find_package(object_recognition_msgs REQUIRED)
+find_package(octomap_msgs REQUIRED)
+find_package(trajectory_msgs REQUIRED)
+
+
+set(msg_files
+  "msg/AllowedCollisionEntry.msg"
+  "msg/AllowedCollisionMatrix.msg"
+  "msg/AttachedCollisionObject.msg"
+  "msg/BoundingVolume.msg"
+  "msg/CollisionObject.msg"
+  "msg/ConstraintEvalResult.msg"
+  "msg/Constraints.msg"
+  "msg/CostSource.msg"
+  "msg/ContactInformation.msg"
+  "msg/DisplayTrajectory.msg"
+  "msg/DisplayRobotState.msg"
+  "msg/Grasp.msg"
+  "msg/GripperTranslation.msg"
+  "msg/JointConstraint.msg"
+  "msg/JointLimits.msg"
+  "msg/LinkPadding.msg"
+  "msg/LinkScale.msg"
+  "msg/MotionPlanRequest.msg"
+  "msg/MotionPlanResponse.msg"
+  "msg/MotionPlanDetailedResponse.msg"
+  "msg/MoveItErrorCodes.msg"
+  "msg/TrajectoryConstraints.msg"
+  "msg/ObjectColor.msg"
+  "msg/OrientationConstraint.msg"
+  "msg/OrientedBoundingBox.msg"
+  "msg/PlaceLocation.msg"
+  "msg/PlannerInterfaceDescription.msg"
+  "msg/PlannerParams.msg"
+  "msg/PlanningScene.msg"
+  "msg/PlanningSceneComponents.msg"
+  "msg/PlanningSceneWorld.msg"
+  "msg/PlanningOptions.msg"
+  "msg/PositionConstraint.msg"
+  "msg/RobotState.msg"
+  "msg/RobotTrajectory.msg"
+  "msg/VisibilityConstraint.msg"
+  "msg/WorkspaceParameters.msg"
+  "msg/KinematicSolverInfo.msg"
+  "msg/PositionIKRequest.msg"
 )
 
-set(SRV_FILES
-GetMotionPlan.srv
-ExecuteKnownTrajectory.srv
-GetStateValidity.srv
-GetCartesianPath.srv
-GetPlanningScene.srv
-GraspPlanning.srv
-ApplyPlanningScene.srv
-QueryPlannerInterfaces.srv
-GetPositionFK.srv
-GetPositionIK.srv
-GetPlannerParams.srv
-SetPlannerParams.srv
-SaveMap.srv
-LoadMap.srv
-SaveRobotStateToWarehouse.srv
-ListRobotStatesInWarehouse.srv
-GetRobotStateFromWarehouse.srv
-CheckIfRobotStateExistsInWarehouse.srv
-RenameRobotStateInWarehouse.srv
-DeleteRobotStateFromWarehouse.srv
+set(srv_files
+  "srv/GetMotionPlan.srv"
+  "srv/ExecuteKnownTrajectory.srv"
+  "srv/GetStateValidity.srv"
+  "srv/GetCartesianPath.srv"
+  "srv/GetPlanningScene.srv"
+  "srv/GraspPlanning.srv"
+  "srv/ApplyPlanningScene.srv"
+  "srv/QueryPlannerInterfaces.srv"
+  "srv/GetPositionFK.srv"
+  "srv/GetPositionIK.srv"
+  "srv/GetPlannerParams.srv"
+  "srv/SetPlannerParams.srv"
+  "srv/SaveMap.srv"
+  "srv/LoadMap.srv"
+  "srv/SaveRobotStateToWarehouse.srv"
+  "srv/ListRobotStatesInWarehouse.srv"
+  "srv/GetRobotStateFromWarehouse.srv"
+  "srv/CheckIfRobotStateExistsInWarehouse.srv"
+  "srv/RenameRobotStateInWarehouse.srv"
+  "srv/DeleteRobotStateFromWarehouse.srv"
 )
 
-set(ACT_FILES
-ExecuteTrajectory.action
-MoveGroup.action
-Pickup.action
-Place.action
+set(action_files
+  "action/ExecuteTrajectory.action"
+  "action/MoveGroup.action"
+  "action/Pickup.action"
+  "action/Place.action"
 )
 
-add_action_files(DIRECTORY action FILES ${ACT_FILES})
-add_message_files(DIRECTORY msg FILES ${MSG_FILES})
-add_service_files(DIRECTORY srv FILES ${SRV_FILES})
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${msg_files}
+  ${srv_files}
+  DEPENDENCIES
+    action_msgs
+    builtin_interfaces
+    std_msgs
+    geometry_msgs
+    sensor_msgs
+    shape_msgs
+    object_recognition_msgs
+    octomap_msgs
+    trajectory_msgs
+)
 
-generate_messages(DEPENDENCIES ${MSG_DEPS})
-
-catkin_package(DEPENDS ${MSG_DEPS})
+ament_package()
