@@ -16,27 +16,20 @@
   <url type="bugtracker">https://github.com/ros-planning/moveit_msgs/issues</url>
   <url type="repository">https://github.com/ros-planning/moveit_msgs</url>
 
-  <build_depend>message_generation</build_depend>
-  <build_depend>rosidl_default_generators</build_depend>
-  <build_depend>octomap_msgs</build_depend>
-  <build_depend>action_msgs</build_depend>
-  <build_depend>sensor_msgs</build_depend>
-  <build_depend>geometry_msgs</build_depend>
-  <build_depend>trajectory_msgs</build_depend>
-  <build_depend>shape_msgs</build_depend>
-  <build_depend>object_recognition_msgs</build_depend>
-  <build_depend>std_msgs</build_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <exec_depend>message_generation</exec_depend> <!-- provide message generation to downstream packages -->
-  <exec_depend>message_runtime</exec_depend>
-  <exec_depend>octomap_msgs</exec_depend>
-  <exec_depend>action_msgs</exec_depend>
-  <exec_depend>sensor_msgs</exec_depend>
-  <exec_depend>geometry_msgs</exec_depend>
-  <exec_depend>trajectory_msgs</exec_depend>
-  <exec_depend>shape_msgs</exec_depend>
-  <exec_depend>object_recognition_msgs</exec_depend>
-  <exec_depend>std_msgs</exec_depend>
+  <build_depend>rosidl_default_generators</build_depend>
+
+  <depend>octomap_msgs</depend>
+  <depend>action_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>trajectory_msgs</depend>
+  <depend>shape_msgs</depend>
+  <depend>object_recognition_msgs</depend>
+  <depend>std_msgs</depend>
+
+  <exec_depend>rosidl_default_runtime</exec_depend>
 
   <member_of_group>rosidl_interface_packages</member_of_group>
 

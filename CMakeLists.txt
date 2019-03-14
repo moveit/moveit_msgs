@@ -98,6 +98,8 @@ set(action_files
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
   ${srv_files}
+  # TODO(mlautman) uncomment once IDL refactor fixes action issue
+  # ${action_files}
   DEPENDENCIES
     action_msgs
     builtin_interfaces
@@ -109,5 +111,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
     octomap_msgs
     trajectory_msgs
 )
+
+ament_export_dependencies(rosidl_default_runtime)
 
 ament_package()
