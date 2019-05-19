@@ -59,7 +59,6 @@ set(SRV_FILES
 GetMotionPlan.srv
 ExecuteKnownTrajectory.srv
 GetStateValidity.srv
-ValidateConstraintFrames.srv
 GetCartesianPath.srv
 GetPlanningScene.srv
 GraspPlanning.srv
