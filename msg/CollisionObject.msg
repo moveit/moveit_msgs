@@ -1,26 +1,34 @@
-# a header, used for interpreting the poses
+# A header, used for interpreting the poses
 Header header
 
-# the id of the object (name used in MoveIt)
+# The id of the object (name used in MoveIt)
 string id
 
 # The object type in a database of known objects
 object_recognition_msgs/ObjectType type
 
-# the the collision geometries associated with the object;
-# their poses are with respect to the specified header
+# The collision geometries associated with the object.
+# Their poses are with respect to the specified header
 
-# solid geometric primitives
+# Solid geometric primitives
 shape_msgs/SolidPrimitive[] primitives
 geometry_msgs/Pose[] primitive_poses
 
-# meshes
+# Meshes
 shape_msgs/Mesh[] meshes
 geometry_msgs/Pose[] mesh_poses
 
-# bounding planes (equation is specified, but the plane can be oriented using an additional pose)
+# Bounding planes (equation is specified, but the plane can be oriented using an additional pose)
 shape_msgs/Plane[] planes
 geometry_msgs/Pose[] plane_poses
+
+# Named subframes on the object. Use these to define points of interest on the object that you want
+# to plan with (e.g. "tip", "spout", "handle"). The id of the object will be prepended to the subframe.
+# If an object with the id "screwdriver" and a subframe "tip" is in the scene, you can use the frame
+# "screwdriver/tip" for planning.
+# The length of the subframe_names and subframe_poses has to be identical.
+string[] subframe_names
+geometry_msgs/Pose[] subframe_poses
 
 # Adds the object to the planning scene. If the object previously existed, it is replaced.
 byte ADD=0
