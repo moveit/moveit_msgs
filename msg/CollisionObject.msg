@@ -36,7 +36,7 @@ byte ADD=0
 # Removes the object from the environment entirely (everything that matches the specified id)
 byte REMOVE=1
 
-# Append to an object that already exists in the planning scene. If the does not exist, it is added.
+# Append to an object that already exists in the planning scene. If the object does not exist, it is added.
 byte APPEND=2
 
 # If an object already exists in the scene, new poses can be sent (the geometry arrays must be left empty)
