@@ -3,14 +3,14 @@
 # which group to be used to plan for grasping
 string group_name
 
-# the name that the attached object to place
+# the name of the attached object to place
 string attached_object_name
 
 # a list of possible transformations for placing the object
 PlaceLocation[] place_locations
 
 # if the user prefers setting the eef pose (same as in pick) rather than 
-# the location of an end effector, this flag should be set to true
+# the location of the object, this flag should be set to true
 bool place_eef
 
 # the name that the support surface (e.g. table) has in the collision world
@@ -30,8 +30,8 @@ Constraints path_constraints
 string planner_id
 
 # an optional list of obstacles that we have semantic information about
-# and that can be touched/pushed/moved in the course of grasping;
-# CAREFUL: If the object name 'all' is used, collisions with all objects are disabled during the approach & lift.
+# and that can be touched/pushed/moved in the course of placing;
+# CAREFUL: If the object name 'all' is used, collisions with all objects are disabled during the approach & retreat.
 string[] allowed_touch_objects
 
 # The maximum amount of time the motion planner is allowed to plan for
@@ -42,7 +42,7 @@ PlanningOptions planning_options
 
 ---
 
-# The result of the pickup attempt
+# The result of the place attempt
 MoveItErrorCodes error_code
 
 # The full starting state of the robot at the start of the trajectory
