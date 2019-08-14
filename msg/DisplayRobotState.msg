@@ -5,5 +5,5 @@ RobotState state
 ObjectColor[] highlight_links
 
 # Optionally, hide the robot state (in rviz) if true.
-# This is useful in Rviz to programmatically toggle robot visualization
+# An example usage is programmatically toggling robot visualization in Rviz
 Bool hide_display
