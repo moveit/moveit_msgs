@@ -11,7 +11,7 @@ set(MSG_DEPS
   object_recognition_msgs
   octomap_msgs)
 
-find_package(catkin REQUIRED genmsg ${MSG_DEPS})
+find_package(catkin REQUIRED COMPONENTS message_generation ${MSG_DEPS})
 
 set(MSG_FILES
 AllowedCollisionEntry.msg
@@ -91,4 +91,4 @@ add_service_files(DIRECTORY srv FILES ${SRV_FILES})
 
 generate_messages(DEPENDENCIES ${MSG_DEPS})
 
-catkin_package(DEPENDS ${MSG_DEPS})
+catkin_package(CATKIN_DEPENDS message_runtime ${MSG_DEPS})
