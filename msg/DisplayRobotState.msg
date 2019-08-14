@@ -4,6 +4,6 @@ RobotState state
 # Optionally, various links can be highlighted
 ObjectColor[] highlight_links
 
-# Optionally, do not display this state in visualizations
-# and hide previously sent states
+# If true, suppress the display in visualizations (like rviz)
+# until a future message re-enables the display
 bool hide_display
