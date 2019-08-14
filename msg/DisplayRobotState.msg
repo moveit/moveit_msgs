@@ -5,5 +5,4 @@ RobotState state
 ObjectColor[] highlight_links
 
 # If true, suppress the display in visualizations (like rviz)
-# until a future message re-enables the display
-bool hide_display
+bool hide
