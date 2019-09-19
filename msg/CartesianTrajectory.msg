@@ -1,6 +1,6 @@
 Header header
 
-# The name of the Cartesian frame the trajectory describes it's motion of.
-string frame
+# The name of the Cartesian frame being tracked with respect to the base frame provided in header.frame_id
+string tracked_frame
 
 CartesianTrajectoryPoint[] points
