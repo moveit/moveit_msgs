@@ -20,6 +20,10 @@ Constraints path_constraints
 # The constraints the resulting trajectory must satisfy
 TrajectoryConstraints trajectory_constraints
 
+# A set of trajectories that may be used as reference or initial trajectories for (typically optimization-based) planners
+# These trajectories do not override start_state or goal_constraints
+GenericTrajectory[] reference_trajectories
+
 # The name of the motion planner to use. If no name is specified,
 # a default motion planner will be used
 string planner_id
