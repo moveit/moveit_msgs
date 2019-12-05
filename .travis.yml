@@ -16,6 +16,7 @@ env:
     - WARNINGS_OK=false
     - ROS_DISTRO=dashing
     - ROS_REPO=ros
+    - UPSTREAM_WORKSPACE=moveit_msgs.repos
   matrix:
     # - TEST=catkin_lint
     - ROS_DISTRO=dashing
