@@ -1,9 +1,9 @@
 repositories:
+# TODO(henningkayser): merge dependencies below into upstream packages
   octomap_msgs:
     type: git
     url: https://github.com/PickNikRobotics/octomap_msgs
     version: ros2
-# TODO(henningkayser): merge dependencies below into upstream packages
   object_recognition_msgs:
     type: git
     url: https://github.com/PickNikRobotics/object_recognition_msgs

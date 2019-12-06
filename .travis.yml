@@ -7,10 +7,6 @@ language: generic
 cache: ccache
 compiler: gcc
 
-notifications:
-  email:
-    recipients:
-      - 130s@2000.jukuin.keio.ac.jp
 env:
   global:
     - WARNINGS_OK=false
@@ -18,7 +14,6 @@ env:
     - ROS_REPO=ros
     - UPSTREAM_WORKSPACE=moveit_msgs.repos
   matrix:
-    # - TEST=catkin_lint
     - ROS_DISTRO=dashing
 
 before_script:
