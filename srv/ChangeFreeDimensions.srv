@@ -1,0 +1,13 @@
+# For use with moveit_jog_arm Cartesian planner
+#
+# Allow the robot to drift along these dimensions in an uncontrolled way.
+# Give 'true' to enable drift in the direction, 'false' to disable.
+# For example, may allow wrist rotation by setting control_x_rotation == true.
+bool control_x_translation
+bool control_y_translation
+bool control_z_translation
+bool control_x_rotation
+bool control_y_rotation
+bool control_z_rotation
+---
+bool success
