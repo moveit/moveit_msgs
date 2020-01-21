@@ -81,7 +81,7 @@ CheckIfRobotStateExistsInWarehouse.srv
 RenameRobotStateInWarehouse.srv
 DeleteRobotStateFromWarehouse.srv
 ChangeControlDimensions.srv
-ChangeFreeDimensions.srv
+ChangeDriftDimensions.srv
 )
 
 set(ACT_FILES
