@@ -2,12 +2,12 @@
 #
 # Allow the robot to drift along these dimensions in a smooth but unregulated way.
 # Give 'true' to enable drift in the direction, 'false' to disable.
-# For example, may allow wrist rotation by control_x_rotation == true.
-bool control_x_translation
-bool control_y_translation
-bool control_z_translation
-bool control_x_rotation
-bool control_y_rotation
-bool control_z_rotation
+# For example, may allow wrist rotation by drift_x_rotation == true.
+bool drift_x_translation
+bool drift_y_translation
+bool drift_z_translation
+bool drift_x_rotation
+bool drift_y_rotation
+bool drift_z_rotation
 ---
 bool success
