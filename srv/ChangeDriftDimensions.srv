@@ -9,5 +9,9 @@ bool drift_z_translation
 bool drift_x_rotation
 bool drift_y_rotation
 bool drift_z_rotation
+
+# This is not implemented yet (it's assumed to be the identity matrix) but in the future it will allow us to transform
+# from the jog control frame to a unique drift frame, so the robot can drift along off-principal axes
+geometry_msgs/Transform transform_jog_frame_to_drift_frame
 ---
 bool success
