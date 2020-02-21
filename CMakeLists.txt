@@ -38,6 +38,8 @@ LinkScale.msg
 MotionPlanRequest.msg
 MotionPlanResponse.msg
 MotionPlanDetailedResponse.msg
+MotionSequenceItem.msg
+MotionSequenceRequest.msg
 MoveItErrorCodes.msg
 TrajectoryConstraints.msg
 ObjectColor.msg
@@ -68,6 +70,7 @@ GetPlanningScene.srv
 GraspPlanning.srv
 ApplyPlanningScene.srv
 QueryPlannerInterfaces.srv
+GetMotionSequence.srv
 GetPositionFK.srv
 GetPositionIK.srv
 GetPlannerParams.srv
@@ -87,6 +90,7 @@ ChangeDriftDimensions.srv
 set(ACT_FILES
 ExecuteTrajectory.action
 MoveGroup.action
+MoveGroupSequence.action
 Pickup.action
 Place.action
 )
