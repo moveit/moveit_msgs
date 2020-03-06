@@ -36,14 +36,4 @@ MotionSequenceRequest commands
 
 ---
 
-# An error code reflecting what went wrong
-moveit_msgs/MoveItErrorCodes error_code
-
-# The full starting state of the robot at the start of the trajectory
-moveit_msgs/RobotState[] trajectory_start
-
-# The trajectory that moved group produced for execution
-moveit_msgs/RobotTrajectory[] planned_trajectory
-
-# The amount of time it took to complete the motion plan
-float64 planning_time
+MotionSequenceResponse response

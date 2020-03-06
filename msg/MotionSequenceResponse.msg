@@ -1,7 +1,7 @@
 #
 # Software License Agreement (BSD License)
 #
-#  Copyright (c) 2018 Pilz GmbH & Co. KG
+#  Copyright (c) 2020 Pilz GmbH & Co. KG
 #  All rights reserved.
 #
 #  Redistribution and use in source and binary forms, with or without
@@ -31,16 +31,14 @@
 #  ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 #  POSSIBILITY OF SUCH DAMAGE.
 
-# A list of motion commands
-MotionSequenceRequest request
+# An error code reflecting what went wrong
+MoveItErrorCodes error_code
 
-# Planning options
-PlanningOptions planning_options
----
+# The full starting state of the robot at the start of the each trajectory-part
+RobotState[] trajectory_start
 
-MotionSequenceResponse response
+# The trajectories that the planner produced for execution
+RobotTrajectory[] planned_trajectory
 
----
-
-# The internal state that the move group action currently is in
-string state
+# The amount of time it took to complete the motion plan
+float64 planning_time

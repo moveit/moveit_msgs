@@ -32,7 +32,7 @@
 #  POSSIBILITY OF SUCH DAMAGE.
 
 # The plan request
-moveit_msgs/MotionPlanRequest req
+MotionPlanRequest req
 
 # The blend radius in meter (used between this and the next command), 0 means no blending
 float64 blend_radius

@@ -40,6 +40,7 @@ MotionPlanResponse.msg
 MotionPlanDetailedResponse.msg
 MotionSequenceItem.msg
 MotionSequenceRequest.msg
+MotionSequenceResponse.msg
 MoveItErrorCodes.msg
 TrajectoryConstraints.msg
 ObjectColor.msg
