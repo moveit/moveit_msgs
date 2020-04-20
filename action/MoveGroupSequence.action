@@ -1,10 +1,11 @@
-# A list of motion commands
+# A list of motion commands with one for each section of the sequence
 MotionSequenceRequest request
 
 # Planning options
 PlanningOptions planning_options
 ---
 
+# Response of the request containing informaiton on all sections of the sequence
 MotionSequenceResponse response
 
 ---
