@@ -76,6 +76,7 @@ GetPositionFK.srv
 GetPositionIK.srv
 GetPlannerParams.srv
 SetPlannerParams.srv
+UpdatePointcloudOctomap.srv
 SaveMap.srv
 LoadMap.srv
 SaveRobotStateToWarehouse.srv
