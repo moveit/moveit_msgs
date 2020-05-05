@@ -1,7 +1,8 @@
 # A header, used for interpreting the poses
 Header header
 
-# The object's pose. The shapes and subframe poses are defined relative to this pose.
+# The object's pose relative to the header frame.
+# The shapes and subframe poses are defined relative to this pose.
 geometry_msgs/Pose pose
 
 # The id of the object (name used in MoveIt)
