@@ -79,6 +79,7 @@ SetPlannerParams.srv
 UpdatePointcloudOctomap.srv
 SaveMap.srv
 LoadMap.srv
+ClearMap.srv
 SaveRobotStateToWarehouse.srv
 ListRobotStatesInWarehouse.srv
 GetRobotStateFromWarehouse.srv
