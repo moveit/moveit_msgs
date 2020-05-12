@@ -27,6 +27,12 @@ float64 max_step
 # computation fails.
 float64 jump_threshold
 
+#Time parametrization algorithm
+#Available algorithms: 
+#IterativeParabolicTimeParameterization,IterativeSplineParameterization,TimeOptimalTrajectoryGeneration]
+string algorithm
+
+
 # Set to true if collisions should be avoided when possible
 bool avoid_collisions
 
