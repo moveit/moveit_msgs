@@ -2,8 +2,8 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.10.1 (2020-05-21)
+-------------------
 * [feature] Add messages to plan for sequences (`#65 <https://github.com/ros-planning/moveit_msgs/issues/65>`_)
 * [maintenance] bump cmake version (`#67 <https://github.com/ros-planning/moveit_msgs/issues/67>`_)
 * [fix] Revert "Allow subframes in CollisionObjects" (`#72 <https://github.com/ros-planning/moveit_msgs/issues/72>`_)
