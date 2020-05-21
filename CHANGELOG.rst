@@ -2,6 +2,16 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.10.1 (2020-05-21)
+-------------------
+* [feature] Add messages to plan for sequences (`#65 <https://github.com/ros-planning/moveit_msgs/issues/65>`_)
+* [feature] Jog arm backport (`#70 <https://github.com/ros-planning/moveit_msgs/issues/70>`_)
+* [improve] Correct typos/better phrasing in Place.action & Add missing word to CollisionObject.msg (`#52 <https://github.com/ros-planning/moveit_msgs/issues/52>`_)
+* [improve] Add comment all scene components returned if no components specified (`#51 <https://github.com/ros-planning/moveit_msgs/issues/51>`_)
+* [maintenance] Bump cmake version (`#67 <https://github.com/ros-planning/moveit_msgs/issues/67>`_)
+* [maintenance] Fix catkin_lint issues (`#56 <https://github.com/ros-planning/moveit_msgs/issues/56>`_)
+* Contributors: Bence Magyar, Bryce Willey, Christian Henkel, Felix von Drigalski, Jens P, Markus Vieth, Michael Görner, Robert Haschke, Tyler Weaver
+
 0.10.0 (2018-04-17)
 -------------------
 * [capability] Add fields to store planning time in pick-and-place `#43 <https://github.com/ros-planning/moveit_msgs/issues/43>`_
@@ -32,7 +42,7 @@ Changelog for package moveit_msgs
 
 0.8.1 (2016-06-15)
 ------------------
-* [feat] add new srv ApplyPlanningScene `#21 <https://github.com/ros-planning/moveit_msgs/issues/21>`_  
+* [feat] add new srv ApplyPlanningScene `#21 <https://github.com/ros-planning/moveit_msgs/issues/21>`_
   This service takes a PlanningScene message and applies it to the monitored scene. Ideally it should include a `bool success` field, but it is not possible to apply the scene and check for success without ABI changes, so leave it out for now. To get this change pushed to indigo.
 * [feat] apply_planning_scene: add a success field in response
   This will be set to true in indigo, but might return false in kinetic and upcoming after we broke the underlying API to get that information.
