@@ -5,15 +5,11 @@ Changelog for package moveit_msgs
 0.10.1 (2020-05-21)
 -------------------
 * [feature] Add messages to plan for sequences (`#65 <https://github.com/ros-planning/moveit_msgs/issues/65>`_)
-* [maintenance] bump cmake version (`#67 <https://github.com/ros-planning/moveit_msgs/issues/67>`_)
-* [fix] Revert "Allow subframes in CollisionObjects" (`#72 <https://github.com/ros-planning/moveit_msgs/issues/72>`_)
 * [feature] Jog arm backport (`#70 <https://github.com/ros-planning/moveit_msgs/issues/70>`_)
-* [fix] fix catkin_lint issues (`#56 <https://github.com/ros-planning/moveit_msgs/issues/56>`_)
 * [improve] Correct typos/better phrasing in Place.action & Add missing word to CollisionObject.msg (`#52 <https://github.com/ros-planning/moveit_msgs/issues/52>`_)
-* [feature] Allow subframes in CollisionObjects (`#50 <https://github.com/ros-planning/moveit_msgs/issues/50>`_)
 * [improve] Add comment all scene components returned if no components specified (`#51 <https://github.com/ros-planning/moveit_msgs/issues/51>`_)
-* [maintenance] Update travis.yml for Melodic
-* [maintenance] Add Melodic build badge
+* [maintenance] Bump cmake version (`#67 <https://github.com/ros-planning/moveit_msgs/issues/67>`_)
+* [maintenance] Fix catkin_lint issues (`#56 <https://github.com/ros-planning/moveit_msgs/issues/56>`_)
 * Contributors: Bence Magyar, Bryce Willey, Christian Henkel, Felix von Drigalski, Jens P, Markus Vieth, Michael Görner, Robert Haschke, Tyler Weaver
 
 0.10.0 (2018-04-17)
