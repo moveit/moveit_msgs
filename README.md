@@ -1,4 +1,4 @@
-# MoveIt msgs
+# MoveIt Msgs
 
 This package includes the ROS messages specific to MoveIt
 

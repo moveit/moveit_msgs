@@ -49,6 +49,9 @@ set(msg_files
   "msg/MotionPlanRequest.msg"
   "msg/MotionPlanResponse.msg"
   "msg/MotionPlanDetailedResponse.msg"
+  "msg/MotionSequenceItem.msg"
+  "msg/MotionSequenceRequest.msg"
+  "msg/MotionSequenceResponse.msg"
   "msg/MoveItErrorCodes.msg"
   "msg/TrajectoryConstraints.msg"
   "msg/ObjectColor.msg"
@@ -79,10 +82,12 @@ set(srv_files
   "srv/GraspPlanning.srv"
   "srv/ApplyPlanningScene.srv"
   "srv/QueryPlannerInterfaces.srv"
+  "srv/GetMotionSequence.srv"
   "srv/GetPositionFK.srv"
   "srv/GetPositionIK.srv"
   "srv/GetPlannerParams.srv"
   "srv/SetPlannerParams.srv"
+  "srv/UpdatePointcloudOctomap.srv"
   "srv/SaveMap.srv"
   "srv/LoadMap.srv"
   "srv/SaveRobotStateToWarehouse.srv"
@@ -91,11 +96,14 @@ set(srv_files
   "srv/CheckIfRobotStateExistsInWarehouse.srv"
   "srv/RenameRobotStateInWarehouse.srv"
   "srv/DeleteRobotStateFromWarehouse.srv"
+  "srv/ChangeControlDimensions.srv"
+  "srv/ChangeDriftDimensions.srv"
 )
 
 set(action_files
   "action/ExecuteTrajectory.action"
   "action/MoveGroup.action"
+  "action/MoveGroupSequence.action"
   "action/Pickup.action"
   "action/Place.action"
 )

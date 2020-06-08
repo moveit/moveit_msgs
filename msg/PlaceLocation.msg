@@ -9,6 +9,10 @@ trajectory_msgs/JointTrajectory post_place_posture
 # (that is always specified elsewhere, not in this message)
 geometry_msgs/PoseStamped place_pose
 
+# The estimated probability of success for this place, or some other
+# measure of how "good" it is.
+float64 quality
+
 # The approach motion
 GripperTranslation pre_place_approach
 

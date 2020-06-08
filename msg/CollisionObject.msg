@@ -1,6 +1,10 @@
 # a header, used for interpreting the poses
 std_msgs/Header header
 
+# The object's pose relative to the header frame.
+# The shapes and subframe poses are defined relative to this pose.
+geometry_msgs/Pose pose
+
 # The id of the object (name used in MoveIt)
 string id
 
@@ -8,7 +12,7 @@ string id
 object_recognition_msgs/ObjectType type
 
 # The collision geometries associated with the object.
-# Their poses are with respect to the specified header
+# Their poses are with respect to the object's pose
 
 # Solid geometric primitives
 shape_msgs/SolidPrimitive[] primitives
