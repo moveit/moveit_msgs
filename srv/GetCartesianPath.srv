@@ -27,6 +27,11 @@ float64 max_step
 # computation fails.
 float64 jump_threshold
 
+# Absolute thresholds such that any two waypoints cannot have joint
+# changes more than these thresholds.  Can be combined with jump_threshold.
+float64 revolute_jump_threshold
+float64 prismatic_jump_threshold
+
 # Set to true if collisions should be avoided when possible
 bool avoid_collisions
 
