@@ -2,6 +2,23 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.11.0 (2020-08-19)
+-------------------
+* [feature] add {prismatic,revolute}_jump_threshold (`#84 <https://github.com/ros-planning/moveit_msgs/issues/84>`_)
+* [feature] Add service to update pointcloud octomap (`#66 <https://github.com/ros-planning/moveit_msgs/issues/66>`_)
+* [feature] Add messages to plan for sequences (`#65 <https://github.com/ros-planning/moveit_msgs/issues/65>`_)
+* [feature] Change jogging drift dimensions (`#63 <https://github.com/ros-planning/moveit_msgs/issues/63>`_)
+* [feature] Add ChangeControlDimensions.srv for moveit_jog_arm (`#61 <https://github.com/ros-planning/moveit_msgs/issues/61>`_)
+* [feature] Ability to hide visualized robot states (`#55 <https://github.com/ros-planning/moveit_msgs/issues/55>`_)
+* [feature] Add fields to set max Cartesian end effector speed (`#80 <https://github.com/ros-planning/moveit_msgs/issues/80>`_)
+* [feature] Remove attempts field from PositionIKRequest.msg (`#76 <https://github.com/ros-planning/moveit_msgs/issues/76>`_)
+* [feature] add COMMUNICATION_FAILURE (`#73 <https://github.com/ros-planning/moveit_msgs/issues/73>`_)
+* [feature] Add origin Pose to CollisionObject (`#69 <https://github.com/ros-planning/moveit_msgs/issues/69>`_)
+* [feature] Add field quality to PlaceLocation (`#64 <https://github.com/ros-planning/moveit_msgs/issues/64>`_)
+* [feature] Extend MotionPlanRequest with seed trajectories (`#46 <https://github.com/ros-planning/moveit_msgs/issues/46>`_)
+* [feature] Allow subframes in CollisionObjects (`#50 <https://github.com/ros-planning/moveit_msgs/issues/50>`_)
+* Contributors: 2scholz, AdamPettinger, AndyZe, Bence Magyar, Bryce Willey, Christian Henkel, Dale Koenig, Dave Coleman, Felix von Drigalski, Jens P, Markus Vieth, Michael Görner, Naoya Yamaguchi, Robert Haschke
+
 0.10.0 (2018-04-17)
 -------------------
 * [capability] Add fields to store planning time in pick-and-place `#43 <https://github.com/ros-planning/moveit_msgs/issues/43>`_
