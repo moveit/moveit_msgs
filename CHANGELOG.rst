@@ -17,10 +17,6 @@ Changelog for package moveit_msgs
 * [enhancement] Add field quality to PlaceLocation (`#64 <https://github.com/ros-planning/moveit_msgs/issues/64>`_)
 * [enhancement] Extend MotionPlanRequest with seed trajectories (`#46 <https://github.com/ros-planning/moveit_msgs/issues/46>`_)
 * [enhancement] Allow subframes in CollisionObjects (`#50 <https://github.com/ros-planning/moveit_msgs/issues/50>`_)
-* [maintenance] bump cmake version (`#67 <https://github.com/ros-planning/moveit_msgs/issues/67>`_)
-* [maintenance] fix catkin_lint issues (`#56 <https://github.com/ros-planning/moveit_msgs/issues/56>`_)
-* [maintenance] Correct typos/better phrasing in Place.action (`#52 <https://github.com/ros-planning/moveit_msgs/issues/52>`_)
-* [maintenance] Add comment all scene components returned if no components specified (`#51 <https://github.com/ros-planning/moveit_msgs/issues/51>`_)
 * Contributors: 2scholz, AdamPettinger, AndyZe, Bence Magyar, Bryce Willey, Christian Henkel, Dale Koenig, Dave Coleman, Felix von Drigalski, Jens P, Markus Vieth, Michael Görner, Naoya Yamaguchi, Robert Haschke
 
 0.10.0 (2018-04-17)
