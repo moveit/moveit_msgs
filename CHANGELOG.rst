@@ -2,6 +2,11 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.11.1 (2020-10-09)
+-------------------
+* [documentation] add a disclaimer to CO about pose not working yet (`#90 <https://github.com/ros-planning/moveit_msgs/issues/90>`_)
+* Contributors: Michael Görner
+
 0.11.0 (2020-08-19)
 -------------------
 * [feature] add {prismatic,revolute}_jump_threshold (`#84 <https://github.com/ros-planning/moveit_msgs/issues/84>`_)
