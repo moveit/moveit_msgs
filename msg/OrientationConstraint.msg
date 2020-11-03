@@ -13,8 +13,8 @@ float64 absolute_x_axis_tolerance
 float64 absolute_y_axis_tolerance
 float64 absolute_z_axis_tolerance
 
-# How should we parameterize the optional orientation error tolerance?
-# See absolute axis tolerance below to specify the manitude.
+# Defines how the orientation error is calculated
+# See absolute axis tolerance below to specify the magnitude.
 uint8 parameterization
 
 # The different options for the orientation error parameterization
