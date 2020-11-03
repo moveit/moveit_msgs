@@ -8,7 +8,7 @@ geometry_msgs/Quaternion orientation
 # The robot link this constraint refers to
 string link_name
 
-# Optional symmetric error tolerances specified
+# Optional tolerance on the three vector components of the orientation error
 float64 absolute_x_axis_tolerance
 float64 absolute_y_axis_tolerance
 float64 absolute_z_axis_tolerance
