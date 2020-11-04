@@ -20,7 +20,8 @@ uint8 parameterization
 # The different options for the orientation error parameterization
 # Intrinsic xyz Euler angles (default value)
 uint8 XYZ_EULER_ANGLES=0
-# A rotation vector, the norm represents the rotation angle around this vector
+# A rotation vector. This is similar to the angle-axis representation,
+# but the magnitude of the vector represents the rotation angle.
 uint8 ROTATION_VECTOR=1
 
 # A weighting factor for this constraint (denotes relative importance to other constraints. Closer to zero means less important)
