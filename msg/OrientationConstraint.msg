@@ -14,7 +14,7 @@ float64 absolute_y_axis_tolerance
 float64 absolute_z_axis_tolerance
 
 # Defines how the orientation error is calculated
-# See absolute axis tolerance above to specify the magnitude.
+# The error is compared to the tolerance defined above
 uint8 parameterization
 
 # The different options for the orientation error parameterization
