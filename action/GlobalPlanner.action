@@ -1,0 +1,11 @@
+# Motion planning request to the global planner
+moveit_msgs/MotionPlanRequest request
+
+# Optional commands for the global planning component i.e. abort current planning operation
+string command
+---
+# Motion planning response from the global planner
+moveit_msgs/MotionPlanResponse response
+---
+# Feedback about the currently running global planning operation
+string feedback

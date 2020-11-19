@@ -1,0 +1,11 @@
+# Additional local constraints for the local planner (Global trajectory is received directlyfrom the global planning component)
+
+Constraints[] local_constraints
+# Optional commands for the local planning component i.e. abort current planning operation
+string command
+---
+# Result of the local planning operation
+moveit_msgs/MoveItErrorCodes error_code
+---
+# Feedback about the currently running local planning operation
+string feedback
