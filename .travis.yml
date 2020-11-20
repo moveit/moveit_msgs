@@ -1,6 +1,6 @@
 # This config file for Travis CI utilizes https://github.com/ros-planning/moveit_ci/ package.
 sudo: required
-dist: xenial
+dist: bionic
 services:
   - docker
 language: generic
@@ -10,11 +10,11 @@ compiler: gcc
 env:
   global:
     - WARNINGS_OK=false
-    - ROS_DISTRO=dashing
+    - ROS_DISTRO=foxy
     - ROS_REPO=ros
-    - UPSTREAM_WORKSPACE=moveit_msgs.repos
   matrix:
-    - ROS_DISTRO=dashing
+    - TEST=ament_lint
+    - ROS_DISTRO=foxy
 
 before_script:
   - git clone -q -b ros2 --depth=1 https://github.com/ros-planning/moveit_ci.git .moveit_ci
