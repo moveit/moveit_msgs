@@ -2,6 +2,17 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.0.0 (2020-11-20)
+-----------
+* [maint] Switch Travis to Foxy (`#98 <https://github.com/ros-planning/moveit_msgs/issues/98>`_)
+  * Remove obsolete moveit_msgs.repos
+  * Enable CI test ament_lint
+* [maint] Suppress Wredundant-decls warnings (`#59 <https://github.com/ros-planning/moveit_msgs/issues/59>`_)
+* [ros2-migration] Port moveit_msgs to ROS 2
+  * Migration to ROS 2 (`AcutronicRobotics/moveit_msgs#1 <https://github.com/AcutronicRobotics/moveit_msgs/issues/1>`_)
+  * Add actions and include rosidl_default_runtime (`AcutronicRobotics/moveit_msgs#2 <https://github.com/AcutronicRobotics/moveit_msgs/issues/2>`_, `AcutronicRobotics/moveit_msgs#3 <https://github.com/AcutronicRobotics/moveit_msgs/issues/3>`_)
+* Contributors: Alejandro Hernández Cordero, Henning Kayser, Lander Usategui San Juan, Mike Lautman, Robert Haschke, Víctor Mayoral Vilches, Yu Yan, ibaiape
+
 0.11.1 (2020-10-09)
 -------------------
 * [documentation] add disclaimer to CO about object pose not working yet (`#90 <https://github.com/ros-planning/moveit_msgs/issues/90>`_)
