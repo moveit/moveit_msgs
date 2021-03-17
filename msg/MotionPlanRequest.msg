@@ -25,11 +25,11 @@ TrajectoryConstraints trajectory_constraints
 GenericTrajectory[] reference_trajectories
 
 # The name of the planning pipeline to use. If no name is specified,
-# a default planning pipeline will be used
+# the configured planning pipeline will be used
 string pipeline_id
 
 # The name of the planning algorithm to use. If no name is specified,
-# a default planner will be used
+# the default planner of the planning pipeline will be used
 string planner_id
 
 # The name of the group of joints on which this planner is operating
