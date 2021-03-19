@@ -48,4 +48,3 @@ duration timeout
 
 # Maximum number of IK attempts (if using random seeds; leave as 0 for the default value specified on the param server to be used)
 int32 attempts
-

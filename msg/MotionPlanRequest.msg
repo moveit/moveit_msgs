@@ -42,4 +42,3 @@ float64 allowed_planning_time
 # internally (i.e., maximum joint velocity or maximum joint acceleration).
 float64 max_velocity_scaling_factor
 float64 max_acceleration_scaling_factor
-
