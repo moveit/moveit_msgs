@@ -13,15 +13,25 @@ jobs:
           - {ROS_DISTRO: melodic, ROS_REPO: main}
           - {ROS_DISTRO: noetic, ROS_REPO: main}
     env:
-      CCACHE_DIR: ~/.ccache
+      CCACHE_DIR: "${{ github.workspace }}/.ccache"
+      BASEDIR: ${{ github.workspace }}/.work
+      CACHE_PREFIX: "${{ matrix.env.ROS_DISTRO }}-${{ matrix.env.ROS_REPO }}"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/cache@v2
+      - name: cache ccache
+        uses: pat-s/always-upload-cache@v2.1.3
         with:
           path: ${{ env.CCACHE_DIR }}
-          key: ccache-${{ matrix.env.ROS_DISTRO }}-${{ matrix.env.ROS_REPO }}-${{ github.sha }}  
+          key: ccache-${{ env.CACHE_PREFIX }}-${{ github.sha }}  
           restore-keys: |
-            ccache-${{ matrix.env.ROS_DISTRO }}-${{ matrix.env.ROS_REPO }}
-      - uses: 'ros-industrial/industrial_ci@master'
+            ccache-${{ env.CACHE_PREFIX }}
+      - name: industrial_ci
+        uses: 'ros-industrial/industrial_ci@master'
         env: ${{ matrix.env }}
+      - name: upload test artifacts (on failure)
+        uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: test-results
+          path: ${{ env.BASEDIR }}/target_ws/**/test_results/**/*.xml
