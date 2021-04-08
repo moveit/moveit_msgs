@@ -2,6 +2,13 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.11.2 (2021-04-08)
+-------------------
+* Migrate to GitHub actions (`#100 <https://github.com/ros-planning/moveit_msgs/issues/100>`_)
+* Support specifying pipeline ids with planning requests (`#95 <https://github.com/ros-planning/moveit_msgs/issues/95>`_)
+* Add parameterization type to orientation constraints (`#96 <https://github.com/ros-planning/moveit_msgs/issues/96>`_)
+* Contributors: Henning Kayser, Jeroen, Robert Haschke, Tyler Weaver
+
 0.11.1 (2020-10-09)
 -------------------
 * [documentation] add disclaimer to CO about object pose not working yet (`#90 <https://github.com/ros-planning/moveit_msgs/issues/90>`_)
@@ -54,7 +61,7 @@ Changelog for package moveit_msgs
 
 0.8.1 (2016-06-15)
 ------------------
-* [feat] add new srv ApplyPlanningScene `#21 <https://github.com/ros-planning/moveit_msgs/issues/21>`_  
+* [feat] add new srv ApplyPlanningScene `#21 <https://github.com/ros-planning/moveit_msgs/issues/21>`_
   This service takes a PlanningScene message and applies it to the monitored scene. Ideally it should include a `bool success` field, but it is not possible to apply the scene and check for success without ABI changes, so leave it out for now. To get this change pushed to indigo.
 * [feat] apply_planning_scene: add a success field in response
   This will be set to true in indigo, but might return false in kinetic and upcoming after we broke the underlying API to get that information.
