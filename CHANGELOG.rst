@@ -2,8 +2,15 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.0.1 (2021-05-24)
+------------------
+* Add License Notice (`#108 <https://github.com/ros-planning/moveit_msgs/issues/108>`_)
+* Fix ccache in CI (`#102 <https://github.com/ros-planning/moveit_msgs/issues/102>`_)
+* Migrate to GitHub Actions (`#99 <https://github.com/ros-planning/moveit_msgs/issues/99>`_)
+* Contributors: Tyler Weaver
+
 2.0.0 (2020-11-20)
------------
+------------------
 * [maint] Switch Travis to Foxy (`#98 <https://github.com/ros-planning/moveit_msgs/issues/98>`_)
   * Remove obsolete moveit_msgs.repos
   * Enable CI test ament_lint
