@@ -3,6 +3,9 @@ moveit_msgs/MotionPlanRequest request
 ---
 # Result of the hybrid planning
 moveit_msgs/MoveItErrorCodes error_code
+
+# Error message with more detailed information about the hybrid planning result
+string error_message
 ---
 # Feedback about the hybrid planning
 string feedback
