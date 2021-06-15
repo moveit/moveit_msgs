@@ -19,7 +19,7 @@ jobs:
       PRERELEASE: true
       BASEDIR: ${{ github.workspace }}/.work
 
-    # if: github.event_name == 'workflow_dispatch' # only allow manual triggering
+    if: github.event_name == 'workflow_dispatch' # only allow manual triggering
     name: "${{ matrix.distro }}"
     runs-on: ubuntu-latest
     steps:
