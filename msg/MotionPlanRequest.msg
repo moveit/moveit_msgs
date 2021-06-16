@@ -24,8 +24,12 @@ TrajectoryConstraints trajectory_constraints
 # These trajectories do not override start_state or goal_constraints
 GenericTrajectory[] reference_trajectories
 
-# The name of the motion planner to use. If no name is specified,
-# a default motion planner will be used
+# The name of the planning pipeline to use. If no name is specified,
+# the configured planning pipeline will be used
+string pipeline_id
+
+# The name of the planning algorithm to use. If no name is specified,
+# the default planner of the planning pipeline will be used
 string planner_id
 
 # The name of the group of joints on which this planner is operating

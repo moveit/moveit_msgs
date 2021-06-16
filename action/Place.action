@@ -30,8 +30,7 @@ Constraints path_constraints
 string planner_id
 
 # an optional list of obstacles that we have semantic information about
-# and that can be touched/pushed/moved in the course of placing;
-# CAREFUL: If the object name 'all' is used, collisions with all objects are disabled during the approach & retreat.
+# and that can be touched/pushed/moved in the course of placing
 string[] allowed_touch_objects
 
 # The maximum amount of time the motion planner is allowed to plan for
