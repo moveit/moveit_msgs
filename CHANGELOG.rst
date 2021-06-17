@@ -2,6 +2,13 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.1.0 (2021-06-17)
+------------------
+* Sync with master branch up to `460caab <https://github.com/ros-planning/moveit_msgs/commit/460caab755cfe018ad07effd7dd808127a7e5c61>`_ (`#120 <https://github.com/ros-planning/moveit_msgs/issues/120>`_)
+* Enable CI on Rolling, Galactic (`#117 <https://github.com/ros-planning/moveit_msgs/issues/117>`_)
+* Pre-release testing workflow for ROS 2 (`#118 <https://github.com/ros-planning/moveit_msgs/issues/118>`_)
+* Contributors: Jafar Abdi, Henning Kayser, Tyler Weaver, Vatan Aksoy Tezer
+
 2.0.1 (2021-05-24)
 ------------------
 * Add License Notice (`#108 <https://github.com/ros-planning/moveit_msgs/issues/108>`_)
