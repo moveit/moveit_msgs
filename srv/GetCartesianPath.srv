@@ -45,6 +45,8 @@ Constraints path_constraints
 
 # Maximum cartesian speed for the given end effector.
 # If max_cartesian_speed <= 0 the trajectory is not modified.
+# WARNING NOT FUNCTIONAL YET.
+# REQUIRES https://github.com/ros-planning/moveit/pull/2674
 string cartesian_speed_end_effector_link
 float64 max_cartesian_speed # m/s
 
