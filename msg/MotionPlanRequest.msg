@@ -54,5 +54,5 @@ float64 max_acceleration_scaling_factor
 # Maximum cartesian speed for the given link.
 # If max_cartesian_speed <= 0 the trajectory is not modified.
 # These fields require the following planning request adapter: default_planner_request_adapters/SetMaxCartesianEndEffectorSpeed
-string cartesian_speed_link
+string cartesian_speed_limited_link
 float64 max_cartesian_speed # m/s
