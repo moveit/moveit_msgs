@@ -43,9 +43,9 @@ bool avoid_collisions
 # Specify additional constraints to be met by the Cartesian path
 Constraints path_constraints
 
-# Maximum cartesian speed for the given end effector.
+# Maximum cartesian speed for the given link.
 # If max_cartesian_speed <= 0 the trajectory is not modified.
-string cartesian_speed_end_effector_link
+string cartesian_speed_link
 float64 max_cartesian_speed # m/s
 
 ---
