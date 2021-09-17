@@ -20,3 +20,9 @@ bool has_acceleration_limits
 # max acceleration limit
 float64 max_acceleration
 # min_acceleration is assumed to be -max_acceleration
+
+# true if joint has jerk limits
+bool has_jerk_limits
+# max jerk limit
+float64 max_jerk
+# min_jerk is assumed to be -max_jerk
