@@ -2,6 +2,11 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add jerk to JointLimits.msg (`#132 <https://github.com/ros-planning/moveit_msgs/issues/132>`_)
+* Contributors: AndyZe
+
 2.1.0 (2021-06-17)
 ------------------
 * Sync with master branch up to `460caab <https://github.com/ros-planning/moveit_msgs/commit/460caab755cfe018ad07effd7dd808127a7e5c61>`_ (`#120 <https://github.com/ros-planning/moveit_msgs/issues/120>`_)
