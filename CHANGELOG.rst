@@ -2,8 +2,8 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.1.1 (2021-09-27)
+------------------
 * Add jerk to JointLimits.msg (`#132 <https://github.com/ros-planning/moveit_msgs/issues/132>`_)
 * Contributors: AndyZe
 
