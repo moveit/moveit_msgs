@@ -6,7 +6,7 @@
 # and the target, nor does it enforce the target to be in the field of view of
 # the sensor. A PositionConstraint can (and probably should) be used for such purposes.
 
-# The radius of the disc that should be maintained visible 
+# The radius of the disc that should be maintained visible
 float64 target_radius
 
 # The pose of the disc; as the robot moves, the pose of the disc may change as well
@@ -14,7 +14,7 @@ float64 target_radius
 geometry_msgs/PoseStamped target_pose
 
 # From the sensor origin towards the target, the disc forms a visibility cone
-# This cone is approximated using many sides. For example, when using 4 sides, 
+# This cone is approximated using many sides. For example, when using 4 sides,
 # that in fact makes the visibility region be a pyramid.
 # This value should always be 3 or more.
 int32 cone_sides
@@ -28,12 +28,12 @@ geometry_msgs/PoseStamped sensor_pose
 
 # Even though the disc is maintained visible, the visibility cone can be very small
 # because of the orientation of the disc with respect to the sensor. It is possible
-# for example to view the disk almost from a side, in which case the visibility cone 
+# for example to view the disk almost from a side, in which case the visibility cone
 # can end up having close to 0 volume. The view angle is defined to be the angle between
 # the normal to the visibility disc and the direction vector from the sensor origin.
 # The value below represents the minimum desired view angle. For a perfect view,
 # this value will be 0 (the two vectors are exact opposites). For a completely obstructed view
-# this value will be Pi/2 (the vectors are perpendicular). This value defined below 
+# this value will be Pi/2 (the vectors are perpendicular). This value defined below
 # is the maximum view angle to be maintained. This should be a value in the open interval
 # (0, Pi/2). If 0 is set, the view angle is NOT enforced.
 float64 max_view_angle

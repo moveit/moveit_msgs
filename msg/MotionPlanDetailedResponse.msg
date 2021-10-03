@@ -14,7 +14,7 @@ RobotTrajectory[] trajectory
 # Description of the reported trajectories (name of processing step)
 string[] description
 
-# The amount of time spent computing a particular step in motion plan computation 
+# The amount of time spent computing a particular step in motion plan computation
 float64[] processing_time
 
 # Status at the end of this plan

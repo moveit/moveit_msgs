@@ -17,7 +17,7 @@ uint32 WORLD_OBJECT_NAMES=8
 # The geometry of the world objects
 uint32 WORLD_OBJECT_GEOMETRY=16
 
-# The maintained octomap 
+# The maintained octomap
 uint32 OCTOMAP=32
 
 # The maintained list of transforms

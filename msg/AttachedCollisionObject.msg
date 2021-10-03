@@ -11,7 +11,7 @@ CollisionObject object
 # by default - the link_name is already considered by default
 string[] touch_links
 
-# If certain links were placed in a particular posture for this object to remain attached 
+# If certain links were placed in a particular posture for this object to remain attached
 # (e.g., an end effector closing around an object), the posture necessary for releasing
 # the object is stored here
 trajectory_msgs/JointTrajectory detach_posture
