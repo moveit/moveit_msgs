@@ -110,7 +110,7 @@ set(action_files
   "action/Place.action"
   "action/LocalPlanner.action"
   "action/GlobalPlanner.action"
-  "action/HybridPlanning.action"
+  "action/HybridPlanner.action"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
