@@ -2,6 +2,11 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.2.0 (2021-12-10)
+------------------
+* Add hybrid planning action definitons (`#135 <https://github.com/ros-planning/moveit_msgs/issues/135>`_)
+* Contributors: AndyZe, Sebastian Jahr, Tyler Weaver
+
 2.1.1 (2021-09-27)
 ------------------
 * Add jerk to JointLimits.msg (`#132 <https://github.com/ros-planning/moveit_msgs/issues/132>`_)
