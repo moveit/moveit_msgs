@@ -99,6 +99,7 @@ set(srv_files
   "srv/RenameRobotStateInWarehouse.srv"
   "srv/DeleteRobotStateFromWarehouse.srv"
   "srv/ServoCommandType.srv"
+  "srv/ChangeJointLimits.srv"
 )
 
 set(action_files
