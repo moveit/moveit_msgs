@@ -62,6 +62,10 @@ JointLimits[] joint_limits
 # Otherwise, use the max scaling factors defined for velocity and acceleration
 bool use_joint_limits
 
+# If true, smoothing will be skipped when applying a smoothing adapter during
+# trajectory processing (if it is defined as a request adapter).
+bool skip_smoothing
+
 # Maximum cartesian speed for the given link.
 # If max_cartesian_speed <= 0 the trajectory is not modified.
 # These fields require the following planning request adapter: default_planner_request_adapters/LimitMaxCartesianLinkSpeed
