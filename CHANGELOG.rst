@@ -2,6 +2,17 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.11.3 (2022-09-13)
+-------------------
+* Rename: cartesian_speed_end_effector_link -> cartesian_speed_limited_link (`#130 <https://github.com/ros-planning/moveit_msgs/issues/130>`_)
+* Clean all trailing whitespace in definitions (`#134 <https://github.com/ros-planning/moveit_msgs/issues/134>`_)
+* Remove disclaimer from ``CollisionObject/pose`` (`#126 <https://github.com/ros-planning/moveit_msgs/issues/126>`_)
+* Improve comments (`#123 <https://github.com/ros-planning/moveit_msgs/issues/123>`_)
+* ``GetCartesianPath.srv``: added fields to set for the maximum cartesian end effector (`#113 <https://github.com/ros-planning/moveit_msgs/issues/113>`_)
+* Remove erroneous comment from Pickup/Place action files (`#112 <https://github.com/ros-planning/moveit_msgs/issues/112>`_)
+* Add ``LICENSE.txt`` (`#107 <https://github.com/ros-planning/moveit_msgs/issues/107>`_)
+* Contributors: Felix von Drigalski, Jorge Santos Simón, Michael Görner, Peter Mitrano, Thies Oelerich, Tyler Weaver, Vatan Aksoy Tezer
+
 0.11.2 (2021-04-08)
 -------------------
 * Migrate to GitHub actions (`#100 <https://github.com/ros-planning/moveit_msgs/issues/100>`_)
