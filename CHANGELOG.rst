@@ -2,6 +2,14 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.2.1 (2022-10-25)
+------------------
+* Add more MoveItErrorCodes to match all OMPL codes (`#146 <https://github.com/ros-planning/moveit_msgs/issues/146>`_)
+* Factor of 2 in OMPL orientation constraints, to match kinematic_constraints (`#145 <https://github.com/ros-planning/moveit_msgs/issues/145>`_)
+* Note on constraint tolerances (`#141 <https://github.com/ros-planning/moveit_msgs/issues/141>`_)
+* Humble CI and prerelease (`#139 <https://github.com/ros-planning/moveit_msgs/issues/139>`_)
+* Contributors: AndyZe, Vatan Aksoy Tezer
+
 2.2.0 (2021-12-10)
 ------------------
 * Add hybrid planning action definitons (`#135 <https://github.com/ros-planning/moveit_msgs/issues/135>`_)
