@@ -2,6 +2,11 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.11.4 (2022-11-18)
+-------------------
+* Add more MoveItErrorCodes to match all OMPL codes (`#147 <https://github.com/ros-planning/moveit_msgs/issues/147>`_)
+* Contributors: AndyZe
+
 0.11.3 (2022-09-13)
 -------------------
 * Rename: cartesian_speed_end_effector_link -> cartesian_speed_limited_link (`#130 <https://github.com/ros-planning/moveit_msgs/issues/130>`_)
