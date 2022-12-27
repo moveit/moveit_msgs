@@ -1,6 +1,3 @@
-# This is a modified version of GlobalPlanner.action from ros-planning/moveit_msgs.
-# A JointTrajectory was added so that timing information is retained.
-
 # Motion planning request to the global planner
 string planning_group
 trajectory_msgs/JointTrajectory trajectory

@@ -53,14 +53,9 @@ float64 max_acceleration_scaling_factor
 
 # New joint limits to use when running time-parameterization and smoothing.
 # Note, this does not replace the values in the robot model.
-# Only applicable for TOTG and Ruckig
 # Set the 'has_limits' field to true for velocity, acceleration, and/or jerk
 # in order for that limit to be applied. Position limits are not supported.
 JointLimits[] joint_limits
-
-# If true, use the joint limits defined in the 'joint_limits' field.
-# Otherwise, use the max scaling factors defined for velocity and acceleration
-bool use_joint_limits
 
 # If true, smoothing will be skipped when applying a smoothing adapter during
 # trajectory processing (if it is defined as a request adapter).
