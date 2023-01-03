@@ -77,7 +77,6 @@ set(msg_files
 
 set(srv_files
   "srv/GetMotionPlan.srv"
-  "srv/ExecuteKnownTrajectory.srv"
   "srv/GetStateValidity.srv"
   "srv/GetCartesianPath.srv"
   "srv/GetPlanningScene.srv"
