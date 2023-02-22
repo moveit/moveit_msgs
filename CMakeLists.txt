@@ -13,16 +13,17 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
     "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wpedantic -Wno-redundant-decls")
 endif()
 
-find_package(ament_cmake REQUIRED)
-find_package(rosidl_default_generators REQUIRED)
 find_package(action_msgs REQUIRED)
+find_package(ament_cmake REQUIRED)
 find_package(builtin_interfaces REQUIRED)
-find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
-find_package(sensor_msgs REQUIRED)
-find_package(shape_msgs REQUIRED)
 find_package(object_recognition_msgs REQUIRED)
 find_package(octomap_msgs REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(service_msgs REQUIRED)
+find_package(shape_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
 find_package(trajectory_msgs REQUIRED)
 
 
@@ -119,12 +120,13 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   DEPENDENCIES
     action_msgs
     builtin_interfaces
-    std_msgs
     geometry_msgs
-    sensor_msgs
-    shape_msgs
     object_recognition_msgs
     octomap_msgs
+    sensor_msgs
+    service_msgs
+    shape_msgs
+    std_msgs
     trajectory_msgs
 )
 
