@@ -43,10 +43,10 @@ int32 num_planning_attempts
 float64 allowed_planning_time
 
 # Scaling factors for optionally reducing the maximum joint velocities and
-# accelerations.  Allowed values are in (0,1].  The maximum joint velocity and
-# acceleration specified in the robot model are multiplied by thier respective
-# factors.  If either are outside their valid ranges (importantly, this
-# includes being set to 0.0), the factor is set to the default value of 1.0
+# accelerations.  Allowed values are in (0,1]. The maximum joint velocity and
+# acceleration specified in the robot model are multiplied by their respective
+# factors. If a factor is outside its valid range (importantly, this
+# includes being set to 0.0), this factor is set to the default value of 1.0
 # internally (i.e., maximum joint velocity or maximum joint acceleration).
 float64 max_velocity_scaling_factor
 float64 max_acceleration_scaling_factor
