@@ -2,6 +2,15 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.2.2 (2023-05-12)
+------------------
+* Remove disclaimer from CollisionObject pose (`#126 <https://github.com/ros-planning/moveit_msgs/issues/126>`_)
+* Add fields in GetCartesianPath srv to scale velocity and acceleration (`#154 <https://github.com/ros-planning/moveit_msgs/issues/154>`_)
+* Fix clang-format-14 version in Format CI job (`#151 <https://github.com/ros-planning/moveit_msgs/issues/151>`_)
+* Switch to clang-format-14 (`#150 <https://github.com/ros-planning/moveit_msgs/issues/150>`_)
+* move_group: Delete unused ExecuteKnownTrajectory.srv (`#149 <https://github.com/ros-planning/moveit_msgs/issues/149>`_)
+* Contributors: AndyZe, Felix von Drigalski, Henning Kayser, Yadu
+
 2.2.1 (2022-10-25)
 ------------------
 * Add more MoveItErrorCodes to match all OMPL codes (`#146 <https://github.com/ros-planning/moveit_msgs/issues/146>`_)
