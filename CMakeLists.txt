@@ -97,8 +97,6 @@ set(srv_files
   "srv/CheckIfRobotStateExistsInWarehouse.srv"
   "srv/RenameRobotStateInWarehouse.srv"
   "srv/DeleteRobotStateFromWarehouse.srv"
-  "srv/ChangeControlDimensions.srv"
-  "srv/ChangeDriftDimensions.srv"
 )
 
 set(action_files
