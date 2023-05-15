@@ -73,6 +73,7 @@ set(msg_files
   "msg/WorkspaceParameters.msg"
   "msg/KinematicSolverInfo.msg"
   "msg/PositionIKRequest.msg"
+  "msg/ServoStatus.msg"
 )
 
 set(srv_files
@@ -97,8 +98,7 @@ set(srv_files
   "srv/CheckIfRobotStateExistsInWarehouse.srv"
   "srv/RenameRobotStateInWarehouse.srv"
   "srv/DeleteRobotStateFromWarehouse.srv"
-  "srv/ChangeControlDimensions.srv"
-  "srv/ChangeDriftDimensions.srv"
+  "srv/ServoCommandType.srv"
 )
 
 set(action_files
