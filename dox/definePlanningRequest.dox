@@ -18,7 +18,7 @@ The content of this message may look intimidating, but most of its fields are op
 - \b group_name This is the name of the group to plan for. This member is required and must be a group name defined in the SRDF.
 - \b start_state This is the state to assume the robot starts at. This member does not need to be specified. Joint values that are not
 set in this message are assumed to be the same as the robot's \e current state (as specified by the PlanningScene visible to the planner).
-- \b goal_constraints Instead of defining a goal state, goals are specified in a more generic fashion: in terms of constraints. Constraints 
+- \b goal_constraints Instead of defining a goal state, goals are specified in a more generic fashion: in terms of constraints. Constraints
 can be very specific, to defining a bounding box in the joint space of the robot such that only one goal state is included, to being very generic,
 where a link of the robot (e.g., the end-effector) is required to move to some specified volume of the space. There can be multiple goal constraints
 specified. Each goal constraint is considered a possible goal. The planner will try to find a path that reaches a state that satisfies at least one of the specified goal constraints. However, all the sub-constraints specified withing a Constraints message must be satisfied.
@@ -35,9 +35,9 @@ the library will use the planning algorithm identified by the specified planner_
 The request to this service is simply a motion planning request as described above.
 The result includes the following members:
 - \b trajectory These are the points along the solution path. Only joints for the group planned for are included.
-- \b trajectory_start The computed thajectory does not include all robot joints; as such, the trajectory is not complete, 
+- \b trajectory_start The computed thajectory does not include all robot joints; as such, the trajectory is not complete,
 since we do not know the values for the links that were not included in planning. For this reason, the full robot state is included.
-This state is usually the robot's current state (as in the planning scene set for planning), but with values specified by the 
+This state is usually the robot's current state (as in the planning scene set for planning), but with values specified by the
 \e start_state overwritten.
 - \b planning_time This is the amount of time the planner took to compute the motion plan
 - \b error_code The status code reported after planning.

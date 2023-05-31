@@ -1,6 +1,6 @@
 # This message contains a set of parameters useful in
 # setting up the volume (a box) in which the robot is allowed to move.
-# This is useful only when planning for mobile parts of 
+# This is useful only when planning for mobile parts of
 # the robot as well.
 
 # Define the frame of reference for the box corners

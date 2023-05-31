@@ -5,7 +5,7 @@ string id
 # positions and efforts are used
 trajectory_msgs/JointTrajectory post_place_posture
 
-# The position of the end-effector for the grasp relative to a reference frame 
+# The position of the end-effector for the grasp relative to a reference frame
 # (that is always specified elsewhere, not in this message)
 geometry_msgs/PoseStamped place_pose
 
