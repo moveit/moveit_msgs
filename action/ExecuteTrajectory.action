@@ -1,5 +1,7 @@
 # The trajectory to execute
 RobotTrajectory trajectory
+# The controller names to use for execution
+string[] controller_names
 
 ---
 
