@@ -1,5 +1,5 @@
 # A service definition for a standard forward kinematics service
-# The frame_id in the header message is the frame in which 
+# The frame_id in the header message is the frame in which
 # the forward kinematics poses will be returned
 std_msgs/Header header
 

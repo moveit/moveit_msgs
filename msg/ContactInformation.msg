@@ -1,5 +1,5 @@
-# Standard ROS header contains information 
-# about the frame in which this 
+# Standard ROS header contains information
+# about the frame in which this
 # contact is specified
 std_msgs/Header header
 
@@ -7,7 +7,7 @@ std_msgs/Header header
 geometry_msgs/Point position
 
 # Normal corresponding to the contact point
-geometry_msgs/Vector3 normal 
+geometry_msgs/Vector3 normal
 
 # Depth of contact point
 float64 depth
