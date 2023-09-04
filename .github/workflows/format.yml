@@ -17,4 +17,4 @@ jobs:
     - uses: actions/setup-python@v4
     - name: Install clang-format-10
       run: sudo apt-get install clang-format-10
-    - uses: pre-commit/action@v3
+    - uses: pre-commit/action@v3.0.0
