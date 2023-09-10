@@ -2,6 +2,27 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.3.0 (2023-09-10)
+------------------
+* Remove drift and control dimension services, add ServoCommandType service and ServoStatus message (`#161 <https://github.com/ros-planning/moveit_msgs/issues/161>`_)
+* Merge commit '1c7f63e' into ros2
+* Add controller names to execution (`#160 <https://github.com/ros-planning/moveit_msgs/issues/160>`_)
+* 0.11.3
+* Rename: cartesian_speed_end_effector_link -> cartesian_speed_limited_link (`#130 <https://github.com/ros-planning/moveit_msgs/issues/130>`_)
+  Co-authored-by: Thies Oelerich <thies.oelerich@iwu.fraunhofer.de>
+* clean all trailing whitespace in definitions (`#134 <https://github.com/ros-planning/moveit_msgs/issues/134>`_)
+* CI: Update pat-s/always-upload-cache
+* Remove disclaimer from CollisionObject pose (`#126 <https://github.com/ros-planning/moveit_msgs/issues/126>`_)
+  With https://github.com/ros-planning/moveit/pull/2037 merged, this disclaimer can be removed
+* fix long comments in msg (`#123 <https://github.com/ros-planning/moveit_msgs/issues/123>`_)
+* Added message fields for setting the maximum cartesian end effector for cartesian paths (`#113 <https://github.com/ros-planning/moveit_msgs/issues/113>`_)
+  * Added message fields for setting the maximum cartesian end effector
+  speed of the computed path.
+  * Add disclaimer for (yet) unsupported field
+  Co-authored-by: Thies Oelerich <thies.oelerich@iwu.fraunhofer.de>
+  Co-authored-by: Michael Görner <me@v4hn.de>
+* Contributors: Felix von Drigalski, Henning Kayser, Michael Görner, Peter Mitrano, Robert Haschke, Stephanie Eng, Thies Oelerich, V Mohammed Ibrahim, Vatan Aksoy Tezer
+
 2.2.2 (2023-05-12)
 ------------------
 * Remove disclaimer from CollisionObject pose (`#126 <https://github.com/ros-planning/moveit_msgs/issues/126>`_)
