@@ -73,6 +73,7 @@ set(msg_files
   "msg/WorkspaceParameters.msg"
   "msg/KinematicSolverInfo.msg"
   "msg/PositionIKRequest.msg"
+  "msg/PipelineState.msg"
   "msg/ServoStatus.msg"
 )
 
