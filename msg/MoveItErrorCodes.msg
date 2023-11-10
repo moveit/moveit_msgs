@@ -46,4 +46,4 @@ string message
 
 # Name of the component that created the status.
 # This is helpful to locate error source.
-string error_source
+string source
