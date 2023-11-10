@@ -42,7 +42,7 @@ int32 ABORT=-30
 int32 NO_IK_SOLUTION=-31
 
 # A message to provide additional information.
-string error_message
+string message
 
 # Name of the component that created the status.
 # This is helpful to locate error source.
