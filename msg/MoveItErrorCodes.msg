@@ -41,4 +41,6 @@ int32 ABORT=-30
 # kinematics errors
 int32 NO_IK_SOLUTION=-31
 
+# Add reasons for planning/execution failure 
 string error_message
+string error_source
