@@ -40,3 +40,5 @@ int32 ABORT=-30
 
 # kinematics errors
 int32 NO_IK_SOLUTION=-31
+
+string error_message
