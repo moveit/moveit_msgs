@@ -2,6 +2,7 @@ int32 val
 
 # overall behavior
 int32 SUCCESS=1
+int32 UNDEFINED=0
 int32 FAILURE=99999
 
 int32 PLANNING_FAILED=-1
