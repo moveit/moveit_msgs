@@ -51,6 +51,16 @@ float64 allowed_planning_time
 float64 max_velocity_scaling_factor
 float64 max_acceleration_scaling_factor
 
+# New joint limits to use when running time-parameterization and smoothing.
+# Note, this does not replace the values in the robot model.
+# Set the 'has_limits' field to true for velocity, acceleration, and/or jerk
+# in order for that limit to be applied. Position limits are not supported.
+JointLimits[] joint_limits
+
+# If true, smoothing will be skipped when applying a smoothing adapter during
+# trajectory processing (if it is defined as a request adapter).
+bool skip_smoothing
+
 # Maximum cartesian speed for the given link.
 # If max_cartesian_speed <= 0 the trajectory is not modified.
 # These fields require the following planning request adapter: default_planning_request_adapters/LimitMaxCartesianLinkSpeed

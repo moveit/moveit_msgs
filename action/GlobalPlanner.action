@@ -1,5 +1,6 @@
 # Motion planning request to the global planner
 string planning_group
+trajectory_msgs/JointTrajectory trajectory
 moveit_msgs/MotionSequenceRequest motion_sequence
 ---
 # Motion planning response from the global planner
