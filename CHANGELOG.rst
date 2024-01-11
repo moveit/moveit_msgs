@@ -2,8 +2,8 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.4.0 (2024-01-11)
+------------------
 * Add error message string to MoveItErrorCode msg (`#171 <https://github.com/ros-planning/moveit_msgs/issues/171>`_)
   * Add error message string to MoveItErrorCode msg
   * Add error source string
