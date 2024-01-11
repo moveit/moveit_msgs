@@ -2,6 +2,29 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add error message string to MoveItErrorCode msg (`#171 <https://github.com/ros-planning/moveit_msgs/issues/171>`_)
+  * Add error message string to MoveItErrorCode msg
+  * Add error source string
+  * Add comments
+  * Update msg/MoveItErrorCodes.msg
+  Co-authored-by: Sebastian Jahr <sebastian.jahr@tuta.io>
+  * Update msg/MoveItErrorCodes.msg
+  Co-authored-by: Sebastian Jahr <sebastian.jahr@picknik.ai>
+  ---------
+  Co-authored-by: Sebastian Jahr <sebastian.jahr@picknik.ai>
+* Defined UNDEFINED (`#172 <https://github.com/ros-planning/moveit_msgs/issues/172>`_)
+* Add PipelineState msg
+* Merge CI updates from branch 'master' into ros2
+* CI: Update GHA (`#166 <https://github.com/ros-planning/moveit_msgs/issues/166>`_)
+* Merge CI updates from branch 'master' into ros2
+* CI: Update .pre-commit-config.yaml (`#163 <https://github.com/ros-planning/moveit_msgs/issues/163>`_)
+* CI format.yml: Update GHA
+* 0.11.4
+* Add more MoveItErrorCodes to match all OMPL codes (`#147 <https://github.com/ros-planning/moveit_msgs/issues/147>`_)
+* Contributors: Abishalini Sivaraman, AndyZe, Robert Haschke, Sebastian Jahr, mosfet80
+
 2.3.0 (2023-09-10)
 ------------------
 * Remove drift and control dimension services, add ServoCommandType service and ServoStatus message (`#161 <https://github.com/ros-planning/moveit_msgs/issues/161>`_)
