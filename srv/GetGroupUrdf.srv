@@ -1,0 +1,7 @@
+# Name of the planning group for which an URDF is requested
+string group_name
+---
+# Whether an error occurred
+MoveItErrorCodes error_code
+# URDF of the requested group. Empty if request was not successful e.g. because the group does not exist
+string urdf_string

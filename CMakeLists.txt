@@ -100,6 +100,7 @@ set(srv_files
   "srv/RenameRobotStateInWarehouse.srv"
   "srv/DeleteRobotStateFromWarehouse.srv"
   "srv/ServoCommandType.srv"
+  "srv/GetGroupUrdf.srv"
 )
 
 set(action_files
