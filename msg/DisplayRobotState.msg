@@ -9,3 +9,6 @@ bool hide
 
 # hide any links specified here in visualizations
 string[] hidden_links
+
+# hide whole groups in visualization
+string[] hidden_groups
