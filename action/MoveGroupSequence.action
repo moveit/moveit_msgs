@@ -13,6 +13,8 @@ MotionSequenceResponse response
 # The internal state that the move group action currently is in
 string state
 
-# Currently unused
+# The number of items in request successfully planned. Currently unused.
 int32 n_planned_items
+
+# Total number of iterm in request. Currently unused.
 int32 n_total_items
