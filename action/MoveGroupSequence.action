@@ -16,5 +16,5 @@ string state
 # The number of items in request successfully planned. Currently unused.
 int32 n_planned_items
 
-# Total number of iterm in request. Currently unused.
+# Total number of items in request. Currently unused.
 int32 n_total_items
