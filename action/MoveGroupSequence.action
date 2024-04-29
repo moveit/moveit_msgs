@@ -12,3 +12,7 @@ MotionSequenceResponse response
 
 # The internal state that the move group action currently is in
 string state
+
+# Currently unused
+int32 n_planned_items
+int32 n_total_items
