@@ -2,6 +2,15 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.5.0 (2024-06-07)
+------------------
+* Update CI jobs to run Jazzy, Iron
+* Adds get group urdf service (`#174 <https://github.com/ros-planning/moveit_msgs/issues/174>`_)
+  * Add service
+  * Format
+  * Format and use MoveItErrorCode
+* Contributors: Henning Kayser, Sebastian Jahr
+
 2.4.0 (2024-01-11)
 ------------------
 * Add error message string to MoveItErrorCode msg (`#171 <https://github.com/ros-planning/moveit_msgs/issues/171>`_)
