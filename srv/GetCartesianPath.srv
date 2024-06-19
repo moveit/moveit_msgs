@@ -43,6 +43,9 @@ bool avoid_collisions
 # Specify additional constraints to be met by the Cartesian path
 Constraints path_constraints
 
+# Set to false if you want to disable time optimization of the trajectory, specifically helpful if you have other shapes than linear moves and want to keep the original shape.
+bool time_optimize
+
 ---
 
 # The state at which the computed path starts
