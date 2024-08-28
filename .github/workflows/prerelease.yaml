@@ -5,24 +5,27 @@ name: pre-release
 
 on:
   workflow_dispatch:
-  push:
+    inputs:
+      ROS_DISTRO:
+        type: string
+        required: true
+        description: 'ROS distribution codename:'
+        default: noetic
+
+permissions:
+  contents: read # to fetch code (actions/checkout)
 
 jobs:
   default:
-    strategy:
-      fail-fast: false
-      matrix:
-        distro: [noetic]
-
     env:
       # https://github.com/ros-industrial/industrial_ci/issues/666
       BUILDER: catkin_make_isolated
-      ROS_DISTRO: ${{ matrix.distro }}
+      ROS_DISTRO: ${{ inputs.ROS_DISTRO }}
       PRERELEASE: true
       BASEDIR: ${{ github.workspace }}/.work
 
     if: github.event_name == 'workflow_disptach' # only allow manual triggering
-    name: "${{ matrix.distro }}"
+    name: "${{ inputs.ROS_DISTRO }}"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

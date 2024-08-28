@@ -20,17 +20,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: cache ccache
-        uses: pat-s/always-upload-cache@v3
+        uses: actions/cache@v4
         with:
+          save-always: true
           path: ${{ env.CCACHE_DIR }}
           key: ccache-${{ env.CACHE_PREFIX }}-${{ github.sha }}
           restore-keys: |
             ccache-${{ env.CACHE_PREFIX }}
       - name: industrial_ci
-        uses: 'ros-industrial/industrial_ci@master'
+        uses: ros-industrial/industrial_ci@master
         env: ${{ matrix.env }}
       - name: upload test artifacts (on failure)
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: failure()
         with:
           name: test-results
