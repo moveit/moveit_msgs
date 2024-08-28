@@ -12,3 +12,9 @@ MotionSequenceResponse response
 
 # The internal state that the move group action currently is in
 string state
+
+# The number of processed items in request.
+int32 n_finished_items
+
+# The total number of items in request.
+int32 n_total_items
