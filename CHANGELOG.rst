@@ -2,6 +2,11 @@
 Changelog for package moveit_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.6.0 (2024-09-16)
+------------------
+* Add services for `LoadGeometryFromFile` and `SaveGeometryToFile` services (`#181 <https://github.com/ros-planning/moveit_msgs/issues/181>`_)
+* Contributors: Bilal Gill
+
 2.5.0 (2024-06-07)
 ------------------
 * Update CI jobs to run Jazzy, Iron
