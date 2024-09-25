@@ -1,2 +1,2 @@
-# whether or not collision checking is enabled
+# whether or not collisions are allowed
 bool[] enabled
