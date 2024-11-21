@@ -11,6 +11,12 @@ string id
 # The object type in a database of known objects
 object_recognition_msgs/ObjectType type
 
+# Visual geometry (optional)
+# This mesh is only used for display. 
+string visual_geometry_mesh_url
+geometry_msgs/Pose visual_geometry_pose
+float64 visual_geometry_mesh_scaling_factor
+
 # The collision geometries associated with the object.
 # Their poses are with respect to the object's pose
 
