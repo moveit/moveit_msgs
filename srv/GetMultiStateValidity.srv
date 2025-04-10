@@ -1,0 +1,11 @@
+RobotState robot_state
+sensor_msgs/JointState[] joint_states
+string group_name
+Constraints constraints
+
+---
+
+bool valid
+ContactInformation[] contacts
+CostSource[] cost_sources
+ConstraintEvalResult[] constraint_result
