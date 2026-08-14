@@ -59,6 +59,7 @@ set(msg_files
   "msg/ObjectColor.msg"
   "msg/OrientationConstraint.msg"
   "msg/OrientedBoundingBox.msg"
+  "msg/PathConstraint.msg"
   "msg/PlaceLocation.msg"
   "msg/PlannerInterfaceDescription.msg"
   "msg/PlannerParams.msg"
