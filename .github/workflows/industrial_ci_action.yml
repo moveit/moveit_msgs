@@ -18,11 +18,10 @@ jobs:
         env:
           - {ROS_DISTRO: humble, ROS_REPO: main}
           - {ROS_DISTRO: humble, ROS_REPO: testing}
-          - {ROS_DISTRO: iron, ROS_REPO: main}
-          - {ROS_DISTRO: iron, ROS_REPO: testing}
           - {ROS_DISTRO: jazzy, ROS_REPO: main}
           - {ROS_DISTRO: jazzy, ROS_REPO: testing}
-          - {ROS_DISTRO: rolling, ROS_REPO: main}
+          - {ROS_DISTRO: lyrical, ROS_REPO: main}
+          - {ROS_DISTRO: lyrical, ROS_REPO: testing}
           - {ROS_DISTRO: rolling, ROS_REPO: testing}
 
     env:
