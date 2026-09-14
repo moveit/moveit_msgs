@@ -13,15 +13,15 @@ on:
 jobs:
   industrial_ci:
     strategy:
+      fail-fast: false
       matrix:
         env:
           - {ROS_DISTRO: humble, ROS_REPO: main}
           - {ROS_DISTRO: humble, ROS_REPO: testing}
-          - {ROS_DISTRO: iron, ROS_REPO: main}
-          - {ROS_DISTRO: iron, ROS_REPO: testing}
           - {ROS_DISTRO: jazzy, ROS_REPO: main}
           - {ROS_DISTRO: jazzy, ROS_REPO: testing}
-          - {ROS_DISTRO: rolling, ROS_REPO: main}
+          - {ROS_DISTRO: lyrical, ROS_REPO: main}
+          - {ROS_DISTRO: lyrical, ROS_REPO: testing}
           - {ROS_DISTRO: rolling, ROS_REPO: testing}
 
     env:
@@ -34,7 +34,7 @@ jobs:
     name: ${{ matrix.env.ROS_DISTRO }}-${{ matrix.env.ROS_REPO }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: cache ccache
         uses: rhaschke/cache@main
         with:
@@ -48,7 +48,7 @@ jobs:
         uses: ros-industrial/industrial_ci@master
         env: ${{ matrix.env }}
       - name: upload test artifacts (on failure)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         if: failure()
         with:
           name: test-results
